@@ -13,7 +13,7 @@ public interface IGameObject {
 	 int Life{ get; set;}
 	 int GiveLife{ get; set;}
 	 int TakeLife { get; set;}
-	 int Active{ get; set;}
+	 bool Active{ get; set;}
 	 int EfectRadius{ get; set;}
 	 
 	 void PerformBorn();

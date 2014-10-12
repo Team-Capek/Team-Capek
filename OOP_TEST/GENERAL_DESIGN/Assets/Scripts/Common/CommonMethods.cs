@@ -8,6 +8,13 @@ using System.Collections;
 
 public static class CommonMthods {
 
+	public static Mesh DrawPlaneMesh(int side, Mesh m)
+	{
+		return m;
+	}
+
+
+
 	public static Mesh DrawPlaneMesh(float width, float height, Mesh m)
 	{
 		

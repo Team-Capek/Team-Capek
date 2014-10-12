@@ -1,15 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Shared : MonoBehaviour {
+public static class Shared  {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+	public const string HERO_HUMAN_NAME="The Conquer Hugor:";
+	public const int HERO_HUMAN_LIFE=50;
+	public const int HERO_HUMAN_DEFENCE=10;
+	public const int HERO_HUMAN_TAKELIFE=2;
+	public const int HERO_HUMAN_EXPIRIENCE=0;
+
+
+
 }

@@ -2,64 +2,68 @@ using UnityEngine;
 using System.Collections;
 using System;
 
-public abstract class Human : MonoBehaviour,IHumanoid {
-
-
+public abstract class Human : IHumanoid { //dali da nasledqwa monobehaviour
+	
+	
 	private int life;
 	private GameObject body ;
-	private string name;
+	private string nameOf;
 	private int giveLife;
 	private int takeLife ;
-	private int active;
+	private int activeOf;
 	private int efectRadius;
 	private int defence;
 	
 	
-	public override GameObject Body { get; set;} //<---da se napishe validaciq
-	public override int GiveLife{ get; set;}  //<---da se napishe validaciq
-	public override bool Active{ get; set;}  //<---da se napishe validaciq
-	public override int EfectRadius{ get; set;}  //<---da se napishe validaciq
+	public  GameObject Body { get; set;} //<---da se napishe validaciq
+	public  int GiveLife{ get; set;}  //<---da se napishe validaciq
+	public  bool Active{ get; set;}  //<---da se napishe validaciq
+	public  int EfectRadius{ get; set;}  //<---da se napishe validaciq
 
-
-
-	public Human(string name,int life, int defence)
+	
+	
+	public Human(string name,int life, int defence, bool active, int takeLife)
 	{
-
-
+		this.Name = name;
+		this.Life = life;
+		this.Defence = defence;
+		this.Active = active;
+		this.TakeLife = takeLife;
+		
 	}
-
-	public override string Name
+	
+	public  string Name
 	{
-		get{return this.name;}
+		get{return this.nameOf;}
 		set
 		{
 			if(value ==null || value=="")
 			{
 				throw new ArgumentOutOfRangeException("Out of range properties!");
 			}
-			this.name=value;
+			this.nameOf=value;
 		}
 	} 
-
-
-
-
-	public override int TakeLife
+	
+	
+	
+	
+	public  int TakeLife
 	{
 		get{return this.takeLife;}
 		set
 		{
-			if(value >0)
+			if(value <0)
 			{
 				throw new ArgumentOutOfRangeException("Out of range properties!");
 			}
 			this.takeLife=value;
 		}
 	} 
-
-	public override int Defence
+	
+	public  int Defence
 	{
-		get{return this.Defence;}
+		get{return this.defence;}
 		set
 		{
 			if(value<0)
@@ -68,11 +72,11 @@ public abstract class Human : MonoBehaviour,IHumanoid {
 			}
 			this.defence =value;
 		}
-
+		
 	}
 	
-
-	public override int Life
+	
+	public  int Life
 	{
 		get
 		{
@@ -88,21 +92,29 @@ public abstract class Human : MonoBehaviour,IHumanoid {
 			this.life=value;
 		}
 	}
-
-	public override void PerformBorn();
-	public override void PerformDeath();
-
-	public override  void CreateBody()
+	
+	public virtual void PerformBorn(){}
+	public virtual void PerformDeath(){}
+	
+	public virtual  void CreateBody()
 	{
-		body = new GameObject(); //"New_Plane_Fom_Script"
-		body.AddComponent<MeshFilter> ();
-		body.GetComponent<MeshFilter>().mesh= PrimitiveType.Cube;
+
+		Mesh m = new Mesh() ;
+		m.name = "ScriptedMesh";
+		m = CommonMthods. DrawPlaneMesh (1, 1, m);
+		//GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+
+		body = new GameObject("OBOOBOBO"); //"New_Plane_Fom_Script"
+		body=GameObject.CreatePrimitive(PrimitiveType.Cube);
+	//	body.AddComponent<MeshFilter> ();
+	//	body.GetComponent<MeshFilter> ().mesh=m;
 		body.AddComponent<MeshRenderer> ();
 		body.GetComponent<MeshRenderer> ().materials[0]  = new Material (Shader.Find("Diffuse")) ;
 		body.AddComponent<CapsuleCollider> ();
 		body.GetComponent<CapsuleCollider> ().isTrigger = this.Active;
+		body.transform.rotation = Quaternion.Euler(60, 145, 30);
 	}
-
-	public override abstract void React(); 
-
+	
+	public virtual  void React(){}
+	
 }
