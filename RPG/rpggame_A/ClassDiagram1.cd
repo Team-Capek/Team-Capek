@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="rpggame_A.Engine" Collapsed="true">
+    <Position X="9.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQBIAAAA0QhGIKAAQgAAEAAEAAUAAACMAABkgQABBo=</HashCode>
+      <FileName>Engine\Engine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rpggame_A.Form1" Collapsed="true">
+    <Position X="16" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rpggame_A.RPG_RUN" Collapsed="true">
+    <Position X="11.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>RPG_RUN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rpggame_A.Properties.Settings" Collapsed="true">
+    <Position X="9.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rpggame_A.KeyBoard">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAGAAAAAAAAAAQAAAAAAABAACAIAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\KeyBoard.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="rpggame_A.GameObject">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAEQAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Constructions\GameObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="rpggame_A.WarUnit">
+    <Position X="5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEABAAAAIAAAAAAACAAAAABCAAAAAAAAAAAAkABDEA=</HashCode>
+      <FileName>Constructions\WarUnit.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="rpggame_A.Magic">
+    <Position X="7" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAJAAACAYAACAAAAAAAAAAAAAAAAAAAEAAAAE=</HashCode>
+      <FileName>Constructions\Magic.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="rpggame_A.Items">
+    <Position X="11.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQABAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Interfaces\Items.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="rpggame_A.Structures">
+    <Position X="16" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Constructions\Struvtures.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rpggame_A.Characters">
+    <Position X="3" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Characters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rpggame_A.DrawGameObject" Collapsed="true">
+    <Position X="5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EIAUBiwQASCEiGIBBAIAAAgEBAUCCAkAwAAAigDCAAg=</HashCode>
+      <FileName>DrawGameObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="rpggame_A.DrawCompositGameObject" Collapsed="true">
+    <Position X="5" Y="13" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AIAEACQAAAAggGAABAIAAAgABAACAAAAAAAAAADAAAA=</HashCode>
+      <FileName>DrawCompositGameObject.cs</FileName>
+      <NewMemberFileName>DRawCompositGameObject.cs</NewMemberFileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="rpggame_A.Utility.Shared" Collapsed="true">
+    <Position X="11.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CBABAAIgEABEAiAAIAAmAJAEAIAAAAAAIAQCABgAAAU=</HashCode>
+      <FileName>Utility\Shared.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rpggame_A.FireBall">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FireBall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rpggame_A.CastEventArgs">
+    <Position X="2.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>CastEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rpggame_A.BrainControler">
+    <Position X="0.5" Y="7" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QAEAAAAAAAAAAQAAAAAAABAACAgAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>BrainControler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="rpggame_A.Brain">
+    <Position X="0.5" Y="10.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>CAABABACAAAgAgAAIAAAAEAAiAQAAgAAAAAAKAAAAAA=</HashCode>
+      <FileName>Brain.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="rpggame_A.Properties.Resources" Collapsed="true">
+    <Position X="11.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAQAAAAAAAgIQAABEEAABQAAAAEAAAAAEACAEIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rpggame_A.Stoune">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAACAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Stoune.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="rpggame_A.Inventory">
+    <Position X="7" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAQIQAAQAAAEgAAAAgECAABgAAAgAAA=</HashCode>
+      <FileName>UI\Inventory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rpggame_A.StoneMagic">
+    <Position X="13.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StoneMagic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rpggame_A.CopyOfForm1" Collapsed="true">
+    <Position X="16" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rpggame_A.FireBallMagic">
+    <Position X="13.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FireBallMagic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rpggame_A.CharmMagic">
+    <Position X="13.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CharmMagic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rpggame_A.LifeMagic">
+    <Position X="13.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LifeMagic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rpggame_A.InventoryController">
+    <Position X="1.25" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>InventoryController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="rpggame_A.IControlerable">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAEAAAAAAAAAAQAAAAAAABAACAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IControlerable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="rpggame_A.IGameObject">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAEQAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Interfaces\IGameObject.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="rpggame_A.ISkill">
+    <Position X="5.25" Y="3.75" Width="1.5" />
+    <InheritanceLine Type="rpggame_A.IGameObject" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.812" Y="2.373" />
+        <Point X="4.812" Y="3.977" />
+        <Point X="5.25" Y="3.977" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAgABBEA=</HashCode>
+      <FileName>Interfaces\ISkill.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="rpggame_A.IMovable">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAACAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IMovable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="rpggame_A.IRenderable">
+    <Position X="2.75" Y="2.75" Width="1.5" />
+    <InheritanceLine Type="rpggame_A.IGameObject" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.812" Y="2.373" />
+        <Point X="3.812" Y="2.558" />
+        <Point X="3.438" Y="2.558" />
+        <Point X="3.438" Y="2.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Interfaces\IRenderable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="rpggame_A.IDraw">
+    <Position X="3" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAACAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IDraw.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="rpggame_A.IMagicable">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IMagicable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="rpggame_A.ITimeOuted">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Interfaces\ITimeOuted.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="rpggame_A.SpriteType">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAACQAAACAAAAAAAAAAAEAAQQEAgAAAICCAA=</HashCode>
+      <FileName>Constructions\SpriteType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
