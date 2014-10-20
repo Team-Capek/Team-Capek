@@ -91,6 +91,8 @@ namespace rpggame_A
             infoPanel.BackColor = Color.DarkRed;
             infoPanel.Font = new Font("Algerian", 11);
             infoPanel.Text = "INFO PANEL: ";
+            infoPanel.AutoSize = false;
+            infoPanel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             inventory = new Inventory(space.Width / 2 - 150, space.Height - 75, space);
             
             space.Controls.Add(infoPanel);
