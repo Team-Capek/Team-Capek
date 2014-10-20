@@ -24,13 +24,10 @@ namespace rpggame_A
             {
                 case MagicType.FireBall:
                     return new FireBall(x, y, 100, 100, this, 30, 25, 700, SpriteType.Fire, Magics.TakeLife);
-                    break;
                 case MagicType.Stone:
                     Vector2 direction = new Vector2(x -this.X, y -this.Y).Normalize();
                     return new Stoune(this.X, this.Y, 25, 25, this, 30, 25, 1700, SpriteType.Stone, Magics.TakeLife, direction, 20);
-                    break;
                 default: return new FireBall(x, y, 100, 100, this, 30, 25, 700, SpriteType.Fire, Magics.TakeLife);
-                    break;
            }
         }
 

@@ -108,8 +108,8 @@ namespace rpggame_A
         {
             switch (typeOfMagic) 
             {
-                case Magics.TakeLife: return Reaction.ReceiveDemage; break;
-                case Magics.GiveLife: return Reaction.ReceiveLife; break;
+                case Magics.TakeLife: return Reaction.ReceiveDemage; 
+                case Magics.GiveLife: return Reaction.ReceiveLife; 
                 default: return Reaction.Passive;
             }
         }

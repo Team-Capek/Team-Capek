@@ -35,8 +35,8 @@ namespace rpggame_A
 
             for (int i = 0; i < picNumber; i++)
             {
-               
-                Image image = Image.FromFile(Shared.INVENTORY_BOX_PATH);
+
+                Image image = Image.FromFile(Shared.InventoryBoxPath);
                 PictureBox pic = new PictureBox();
                 pic.Image = image;
                 pic.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -79,22 +79,22 @@ namespace rpggame_A
                     switch (target.SpriteType) 
                     {
                         case SpriteType.FireMagic:
-                              item.Image = Image.FromFile(Shared.FIREBALL_ITEM_IN_BOX)  ;
+                              item.Image = Image.FromFile(Shared.FireballItemInBox);
                               item.Tag = "fireBox";
                               focus = "fireBox";                        
                             break;
                         case SpriteType.StoneMagic:
-                              item.Image = Image.FromFile(Shared.STONE_ITEM_IN_BOX);
+                              item.Image = Image.FromFile(Shared.StoneItemInBox);
                               item.Tag = "stoneBox";
                               focus = "stoneBox";
                             break;
                         case SpriteType.LifeMagic:
-                              item.Image = Image.FromFile(Shared.LIFE_ITEM_IN_BOX);
+                              item.Image = Image.FromFile(Shared.LifeItemInBox);
                               item.Tag = "lifeBox";
                               focus = "lifeBox";
                             break;
                         case SpriteType.CharmMagic:
-                              item.Image = Image.FromFile(Shared.CHARM_ITEM_IN_BOX);
+                              item.Image = Image.FromFile(Shared.CharmItemInBox);
                               item.Tag = "charmBox";
                               focus = "charmBox";
                             break;
