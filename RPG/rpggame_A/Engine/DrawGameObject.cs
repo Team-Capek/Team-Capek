@@ -358,11 +358,11 @@ namespace rpggame_A
             this.ghoulImageR = Image.FromFile(Shared.GhoulImagePathR);
             this.ghoulImageU = Image.FromFile(Shared.GhoulImagePathU);
             this.ghoulImageD = Image.FromFile(Shared.GhoulImagePathD);
-            this.fireItem = Image.FromFile(Shared.FIREBALL_ITEM);
-            this.stoneItem= Image.FromFile(Shared.STONE_ITEM);
-            this.stoneOnThrow=Image.FromFile(Shared.STONE_ITEM_ON_THROW);
-            this.charmItem = Image.FromFile(Shared.CHARM_ITEM);
-            this.lifeItem = Image.FromFile(Shared.LIFE_ITEM);
+            this.fireItem = Image.FromFile(Shared.FireballItem);
+            this.stoneItem= Image.FromFile(Shared.StoneItem);
+            this.stoneOnThrow=Image.FromFile(Shared.StoneItemOnThrow);
+            this.charmItem = Image.FromFile(Shared.CharmItem);
+            this.lifeItem = Image.FromFile(Shared.LifeItem);
            // this.stoneOnThrow.Height = 20;
 
         }

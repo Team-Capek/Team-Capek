@@ -259,13 +259,13 @@ namespace rpggame_A
         private void InitialHero()
         {
             hero = new Characters(100, 100, 110, 100, 100, 2, 5, 30, 10, 20, 
-                new Vector2(0, 0), SpriteType.Mage, Shared.HERO_HUMAN_NAME, Shared.HERO_HUMAN_MAXLIFE);
+                new Vector2(0, 0), SpriteType.Mage, Shared.HeroHumanName, Shared.HeroHumanMaxLife);
 
             boss = new Characters(100, 300, 110, 110, 200, 2, 5, 30, 10, 10,
-                new Vector2(0, 0), SpriteType.Ghoul, Shared.BOSS_MONSTER_NAME, Shared.BOSS_MONSTER_MAXLIFE);
+                new Vector2(0, 0), SpriteType.Ghoul, Shared.BossMonsterName, Shared.BossMonsterMaxLife);
 
             stone = new Characters(350, 250, 310, 110, 200, 2, 5, 30, 10, 10,
-                new Vector2(0, 0), SpriteType.Wall, Shared.BOSS_MONSTER_NAME, Shared.BOSS_MONSTER_MAXLIFE);
+                new Vector2(0, 0), SpriteType.Wall, Shared.BossMonsterName, Shared.BossMonsterMaxLife);
 
             fireItem = new FireBallMagic(500, 40, 30, 30, SpriteType.FireMagic, 1, 1, 5 );
 
@@ -304,7 +304,7 @@ namespace rpggame_A
         {
             foreach (var mag in this.magics)
             {
-                mag.CurrentTimeout += Shared.TIMEDOUT_FIRE_BALL_MAX;
+                mag.CurrentTimeout += Shared.TimedoutFireBallMax;
                 if (mag.HasTimeout)
                 {               
                     this.DrawerDevice.RemoveObject(mag);

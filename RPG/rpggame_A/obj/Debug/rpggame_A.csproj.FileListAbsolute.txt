@@ -34,3 +34,12 @@ C:\Users\PO\Desktop\RPG\rpggame_A\obj\Debug\rpggame_A.csproj.GenerateResource.Ca
 \\PROTECTA-PC\Users\POREAL\RPG\rpggame_A\obj\Debug\rpggame_A.Properties.Resources.resources
 \\PROTECTA-PC\Users\POREAL\RPG\rpggame_A\obj\Debug\rpggame_A.csproj.GenerateResource.Cache
 \\PROTECTA-PC\Users\POREAL\RPG\rpggame_A\obj\Debug\rpggame_A.GameWindow.resources
+C:\Users\Yulia\Documents\Programming\II_Level\OOP\TeamWork\New folder\trunk\RPG\rpggame_A\bin\Debug\rpggame_A.exe.config
+C:\Users\Yulia\Documents\Programming\II_Level\OOP\TeamWork\New folder\trunk\RPG\rpggame_A\obj\Debug\rpggame_A.exe
+C:\Users\Yulia\Documents\Programming\II_Level\OOP\TeamWork\New folder\trunk\RPG\rpggame_A\obj\Debug\rpggame_A.pdb
+C:\Users\Yulia\Documents\Programming\II_Level\OOP\TeamWork\New folder\trunk\RPG\rpggame_A\bin\Debug\rpggame_A.exe
+C:\Users\Yulia\Documents\Programming\II_Level\OOP\TeamWork\New folder\trunk\RPG\rpggame_A\bin\Debug\rpggame_A.pdb
+C:\Users\Yulia\Documents\Programming\II_Level\OOP\TeamWork\New folder\trunk\RPG\rpggame_A\obj\Debug\rpggame_A.csprojResolveAssemblyReference.cache
+C:\Users\Yulia\Documents\Programming\II_Level\OOP\TeamWork\New folder\trunk\RPG\rpggame_A\obj\Debug\rpggame_A.GameWindow.resources
+C:\Users\Yulia\Documents\Programming\II_Level\OOP\TeamWork\New folder\trunk\RPG\rpggame_A\obj\Debug\rpggame_A.Properties.Resources.resources
+C:\Users\Yulia\Documents\Programming\II_Level\OOP\TeamWork\New folder\trunk\RPG\rpggame_A\obj\Debug\rpggame_A.csproj.GenerateResource.Cache

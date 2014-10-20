@@ -8,20 +8,18 @@ namespace rpggame_A.Utility
 {
   public static class Shared
     {
-        public  const string HERO_HUMAN_NAME = "HUGOR";
-        public const int HERO_HUMAN_MAXLIFE=100;
+        public  const string HeroHumanName = "HUGOR";
+        public const int HeroHumanMaxLife=100;
 
-        public const string BOSS_MONSTER_NAME = "DARK ARKADASH";
-        public const int BOSS_MONSTER_MAXLIFE = 200;
+        public const string BossMonsterName = "DARK ARKADASH";
+        public const int BossMonsterMaxLife = 200;
 
-        public const int TIMEDOUT_FIRE_BALL_MAX = 100;
-        public const int TIMER_INTERVAL = 100;
+        public const int TimedoutFireBallMax = 100;
+        public const int TimerIterval = 100;
 
-        public const int FIRE_BALL_MAGIC_RANGE = 100;
+        public const int FireBallMagicRange = 100;
 
-
-
-        public const string INVENTORY_BOX_PATH = "../../Resources/inventoryBox.png";
+        public const string InventoryBoxPath = "../../Resources/inventoryBox.png";
 
         public const string MageImagePath = "../../Resources/mage.png";
         public const string MageImagePathL = "../../Resources/mageL.png";
@@ -40,20 +38,17 @@ namespace rpggame_A.Utility
         public const string GhoulImagePathD = "../../Resources/MonstD.png";
         public const string GhoulImagePathU = "../../Resources/MonstU.png";
 
-        public const string FIREBALL_ITEM = "../../Resources/fireBallMagic.png";
-        public const string FIREBALL_ITEM_IN_BOX = "../../Resources/fireBallMagicInBox.png";
-        public const string STONE_ITEM = "../../Resources/stoneMagic.png";
-        public const string STONE_ITEM_IN_BOX = "../../Resources/stoneMagicInBox.png";
-        public const string STONE_ITEM_ON_THROW = "../../Resources/stone.png";
+        public const string FireballItem = "../../Resources/fireBallMagic.png";
+        public const string FireballItemInBox = "../../Resources/fireBallMagicInBox.png";
+        public const string StoneItem = "../../Resources/stoneMagic.png";
+        public const string StoneItemInBox = "../../Resources/stoneMagicInBox.png";
+        public const string StoneItemOnThrow = "../../Resources/stone.png";
 
-        public const string LIFE_ITEM = "../../Resources/lifeMagic.png";
-        public const string LIFE_ITEM_IN_BOX = "../../Resources/lifeMagicInBox.png";
-        public const string CHARM_ITEM = "../../Resources/charmMagic.png";
-        public const string CHARM_ITEM_IN_BOX = "../../Resources/charmMagicInBox.png";
+        public const string LifeItem = "../../Resources/lifeMagic.png";
+        public const string LifeItemInBox = "../../Resources/lifeMagicInBox.png";
+        public const string CharmItem = "../../Resources/charmMagic.png";
+        public const string CharmItemInBox = "../../Resources/charmMagicInBox.png";
 
         public const string SpitImagePath = "../../Resources/spit.png";
-       
-
-
     }
 }
