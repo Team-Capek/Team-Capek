@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Capec.RPGGame.Properties
+namespace Capek.RPGGame.Properties
 {
 
 

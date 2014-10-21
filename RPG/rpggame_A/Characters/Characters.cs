@@ -1,8 +1,8 @@
-﻿using Capec.RPGGame.Constructions;
-using Capec.RPGGame.Interfaces;
-using Capec.RPGGame.Items;
+﻿using Capek.RPGGame.Constructions;
+using Capek.RPGGame.Interfaces;
+using Capek.RPGGame.Items;
 
-namespace Capec.RPGGame.Characters
+namespace Capek.RPGGame.Characters
 {
     public class Characters : WarUnit
     {

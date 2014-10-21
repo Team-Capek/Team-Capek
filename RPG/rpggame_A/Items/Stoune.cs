@@ -1,7 +1,7 @@
-﻿using Capec.RPGGame.Constructions;
-using Capec.RPGGame.Interfaces;
+﻿using Capek.RPGGame.Constructions;
+using Capek.RPGGame.Interfaces;
 
-namespace Capec.RPGGame.Items
+namespace Capek.RPGGame.Items
 {
     public class Stoune : Magic, IMovable
     {

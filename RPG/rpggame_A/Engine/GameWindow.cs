@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Capec.RPGGame.Engine
+namespace Capek.RPGGame.Engine
 {
     public partial class GameWindow : Form
     {

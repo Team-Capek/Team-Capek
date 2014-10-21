@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
-using Capec.RPGGame.Constructions;
+using Capek.RPGGame.Constructions;
 
-namespace Capec.RPGGame.Interfaces
+namespace Capek.RPGGame.Interfaces
 {
     public class KeyBoard : IControlerable
     {

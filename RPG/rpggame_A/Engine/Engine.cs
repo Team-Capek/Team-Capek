@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
-using Capec.RPGGame.Constructions;
-using Capec.RPGGame.Utility;
-using Capec.RPGGame.UI;
-using Capec.RPGGame.Characters;
-using Capec.RPGGame.Interfaces;
-using Capec.RPGGame.Items;
+using Capek.RPGGame.Constructions;
+using Capek.RPGGame.Utility;
+using Capek.RPGGame.UI;
+using Capek.RPGGame.Characters;
+using Capek.RPGGame.Interfaces;
+using Capek.RPGGame.Items;
 
-namespace Capec.RPGGame.Engine
+namespace Capek.RPGGame.Engine
 {
     class Engine
     {

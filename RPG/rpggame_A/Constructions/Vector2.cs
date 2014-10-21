@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Capec.RPGGame.Constructions
+namespace Capek.RPGGame.Constructions
 {
     public class Vector2
     {

@@ -1,4 +1,4 @@
-﻿namespace Capec.RPGGame.Engine
+﻿namespace Capek.RPGGame.Engine
 {
     partial class GameWindow
     {
@@ -35,7 +35,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Olive;
-            this.BackgroundImage = global::Capec.RPGGame.Properties.Resources.groundGrassSand2;
+            this.BackgroundImage = global::Capek.RPGGame.Properties.Resources.groundGrassSand2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(984, 612);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -96,7 +96,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Olive;
-            this.BackgroundImage = global::Capec.RPGGame.Properties.Resources.groundGrassSand1;
+            this.BackgroundImage = global::Capek.RPGGame.Properties.Resources.groundGrassSand1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(738, 472);
             this.Cursor = System.Windows.Forms.Cursors.Hand;

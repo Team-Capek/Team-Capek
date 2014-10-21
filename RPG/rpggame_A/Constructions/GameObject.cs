@@ -1,6 +1,6 @@
-﻿using Capec.RPGGame.Interfaces;
+﻿using Capek.RPGGame.Interfaces;
 
-namespace Capec.RPGGame.Constructions
+namespace Capek.RPGGame.Constructions
 {
     public abstract class GameObject : IGameObject
     {

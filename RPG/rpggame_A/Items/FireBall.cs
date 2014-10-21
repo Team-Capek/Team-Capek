@@ -1,6 +1,6 @@
-﻿using Capec.RPGGame.Constructions;
+﻿using Capek.RPGGame.Constructions;
 
-namespace Capec.RPGGame.Items
+namespace Capek.RPGGame.Items
 {
     public class FireBall : Magic
     {

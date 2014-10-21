@@ -5,12 +5,12 @@ using System.Drawing.Text;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using Capec.RPGGame.Constructions;
-using Capec.RPGGame.Properties;
-using Capec.RPGGame.Utility;
-using Capec.RPGGame.Interfaces;
+using Capek.RPGGame.Constructions;
+using Capek.RPGGame.Properties;
+using Capek.RPGGame.Utility;
+using Capek.RPGGame.Interfaces;
 
-namespace Capec.RPGGame.Engine
+namespace Capek.RPGGame.Engine
 {
     public class DrawGameObject : IDraw
     {

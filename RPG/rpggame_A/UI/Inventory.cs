@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
-using Capec.RPGGame.Constructions;
-using Capec.RPGGame.Utility;
+using Capek.RPGGame.Constructions;
+using Capek.RPGGame.Utility;
 
-namespace Capec.RPGGame.UI
+namespace Capek.RPGGame.UI
 {
     public class Inventory
     {

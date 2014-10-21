@@ -1,6 +1,6 @@
-﻿using Capec.RPGGame.Constructions;
+﻿using Capek.RPGGame.Constructions;
 
-namespace Capec.RPGGame.Interfaces
+namespace Capek.RPGGame.Interfaces
 {
     public interface IMovable
     {

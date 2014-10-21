@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-namespace Capec.RPGGame.Utility
+namespace Capek.RPGGame.Utility
 {
     class SimpleProgressBar : ProgressBar
     {

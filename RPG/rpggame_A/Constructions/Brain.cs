@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace Capec.RPGGame.Constructions
+namespace Capek.RPGGame.Constructions
 {
     public class Brain : INotifyPropertyChanged
     {

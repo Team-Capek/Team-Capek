@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Capec.RPGGame
+namespace Capek.RPGGame
 {
     static class RPG_RUN
     {

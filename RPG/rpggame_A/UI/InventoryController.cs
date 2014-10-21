@@ -1,4 +1,4 @@
-﻿namespace Capec.RPGGame.UI
+﻿namespace Capek.RPGGame.UI
 {
     public class InventoryController
     {

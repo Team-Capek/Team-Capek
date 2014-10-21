@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Capec.RPGGame.Interfaces
+namespace Capek.RPGGame.Interfaces
 {
     public class AIControler : IControlerable
     {

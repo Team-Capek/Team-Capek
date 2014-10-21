@@ -1,8 +1,8 @@
-﻿using Capec.RPGGame.Constructions;
+﻿using Capek.RPGGame.Constructions;
 
-namespace Capec.RPGGame.Items
+namespace Capek.RPGGame.Items
 {
-    public class LifeMagic : Capec.RPGGame.Interfaces.Items
+    public class LifeMagic : Capek.RPGGame.Interfaces.Items
     {
         public LifeMagic(int x, int y, int width, int height, SpriteType type,
             int giveLife, int giveAttack, int giveDefence)

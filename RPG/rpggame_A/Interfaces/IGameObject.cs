@@ -1,4 +1,4 @@
-﻿namespace Capec.RPGGame.Interfaces
+﻿namespace Capek.RPGGame.Interfaces
 {
     public interface IGameObject
     {
