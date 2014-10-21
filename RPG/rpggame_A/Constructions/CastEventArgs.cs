@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace rpggame_A
+﻿namespace rpggame_A
 {
+    using System;
+
     public class CastEventArgs:EventArgs
     {
 

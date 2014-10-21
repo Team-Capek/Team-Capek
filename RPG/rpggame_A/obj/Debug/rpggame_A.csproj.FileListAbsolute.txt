@@ -43,3 +43,12 @@ C:\Users\Yulia\Documents\Programming\II_Level\OOP\TeamWork\New folder\branches\C
 C:\Users\Yulia\Documents\Programming\II_Level\OOP\TeamWork\New folder\branches\CAPEC_WORK\RPG\rpggame_A\obj\Debug\rpggame_A.GameWindow.resources
 C:\Users\Yulia\Documents\Programming\II_Level\OOP\TeamWork\New folder\branches\CAPEC_WORK\RPG\rpggame_A\obj\Debug\rpggame_A.Properties.Resources.resources
 C:\Users\Yulia\Documents\Programming\II_Level\OOP\TeamWork\New folder\branches\CAPEC_WORK\RPG\rpggame_A\obj\Debug\rpggame_A.csproj.GenerateResource.Cache
+D:\SoftUni\TeamWork\Team-Capek\Team-Capek\branches\CAPEC_WORK\RPG\rpggame_A\bin\Debug\rpggame_A.exe.config
+D:\SoftUni\TeamWork\Team-Capek\Team-Capek\branches\CAPEC_WORK\RPG\rpggame_A\obj\Debug\rpggame_A.exe
+D:\SoftUni\TeamWork\Team-Capek\Team-Capek\branches\CAPEC_WORK\RPG\rpggame_A\obj\Debug\rpggame_A.pdb
+D:\SoftUni\TeamWork\Team-Capek\Team-Capek\branches\CAPEC_WORK\RPG\rpggame_A\bin\Debug\rpggame_A.exe
+D:\SoftUni\TeamWork\Team-Capek\Team-Capek\branches\CAPEC_WORK\RPG\rpggame_A\bin\Debug\rpggame_A.pdb
+D:\SoftUni\TeamWork\Team-Capek\Team-Capek\branches\CAPEC_WORK\RPG\rpggame_A\obj\Debug\rpggame_A.csprojResolveAssemblyReference.cache
+D:\SoftUni\TeamWork\Team-Capek\Team-Capek\branches\CAPEC_WORK\RPG\rpggame_A\obj\Debug\rpggame_A.GameWindow.resources
+D:\SoftUni\TeamWork\Team-Capek\Team-Capek\branches\CAPEC_WORK\RPG\rpggame_A\obj\Debug\rpggame_A.Properties.Resources.resources
+D:\SoftUni\TeamWork\Team-Capek\Team-Capek\branches\CAPEC_WORK\RPG\rpggame_A\obj\Debug\rpggame_A.csproj.GenerateResource.Cache

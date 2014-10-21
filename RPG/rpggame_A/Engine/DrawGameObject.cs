@@ -1,23 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-using System.Drawing;
-using System.Runtime.InteropServices;
-using rpggame_A.Utility;
-using rpggame_A.Properties;
-using System.Drawing.Text;
-
-
-namespace rpggame_A
+﻿namespace rpggame_A
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Windows.Forms;
+    using System.Drawing;
+    using System.Runtime.InteropServices;
+    using Utility;
+    using Properties;
+    using System.Drawing.Text;
+
     public class DrawGameObject : IDraw
     {
         [DllImport("gdi32.dll")]
         private static extern IntPtr AddFontMemResourceEx(IntPtr pbfont,uint cbfont,
             IntPtr pdv, [In] ref uint pcFonts);
-
         private FontFamily fontFamily;
         private Font customFont;
 
@@ -34,17 +31,13 @@ namespace rpggame_A
             Marshal.FreeCoTaskMem(ptr);
             fontFamily = privateFont.Families[0];
             customFont = new Font(fontFamily, 10, FontStyle.Regular);
-
-
         }
 
         private void AllocateFont(Font f, Control c, float size ) 
         {
             FontStyle fs=  FontStyle.Regular;
             c.Font= new Font(fontFamily,size,fs);
-        }
-
-     
+        }   
 
         private const int ProgressBarSizeX = 60;
         private const int ProgressBarSizeY = 8;
@@ -82,14 +75,11 @@ namespace rpggame_A
             }
         }
 
-      
-
         public void RemoveObject(IRenderable renderableObject)
         {
            var picBox = GetPictureBoxByObject(renderableObject);
             this.Canvas.Controls.Remove(picBox);
             this.pictureBoxes.Remove(picBox);
-
 
             if (renderableObject is ISkill)
             {
@@ -104,11 +94,8 @@ namespace rpggame_A
             return this.pictureBoxes.First(p => p.Tag == renderableObject);
         }
 
-
         public void RedrawObject(IRenderable objectToBeRedrawn)
         {
-          
-         
             var newCoordinates = new Point((int)objectToBeRedrawn.X, (int)objectToBeRedrawn.Y);
             var picBox = GetPictureBoxByObject(objectToBeRedrawn);
             Image im=picBox.Image;
@@ -122,7 +109,6 @@ namespace rpggame_A
                 picBox.Image = GetSpriteImage(objectToBeRedrawn);
             }
             picBox.Location = newCoordinates;
-          
 
             if (objectToBeRedrawn is ISkill && objectToBeRedrawn.SpriteType!=SpriteType.Wall)
             {
@@ -147,7 +133,6 @@ namespace rpggame_A
 
             }
         }
-
 
         private void CreateLablelName(ISkill unit)
         {
@@ -190,25 +175,20 @@ namespace rpggame_A
             this.pictureBoxes.Add(picBox);
             this.Canvas.Controls.Add(picBox);
         }
-
-
-
+        
         private void SetProgressBarLocation(ISkill unit, ProgressBar progressBar)
         {
-            progressBar.Location = new Point((int)(unit.X + ProgressBarOffsetX),(int)( unit.Y + ProgressBarOffsetY));
-            
+            progressBar.Location = new Point((int)(unit.X + ProgressBarOffsetX),(int)( unit.Y + ProgressBarOffsetY)); 
         }
 
         private void SetNameLocation(ISkill unit, Label Name) 
         {
             Name.Location = new Point((int)(unit.X + ProgressBarOffsetX), (int)(unit.Y + ProgressBarOffsetY - 20));
         }
-
-
+        
         private Image GetImageByDirection(IRenderable renderableObject) 
         {
-            Image image;
-            
+            Image image; 
             WarUnit u = (WarUnit)renderableObject;
            
             switch (renderableObject.SpriteType)
@@ -287,7 +267,6 @@ namespace rpggame_A
             return image;
         }
 
-
         private Image GetSpriteImage(IRenderable renderableObject)
         {
             Image image;
@@ -327,8 +306,6 @@ namespace rpggame_A
             return image;
         }
 
-       
-
         private SimpleProgressBar GetProgressBarByObject(ISkill unit)
         {
             return this.progressBars.First(p => p.Tag == unit);
@@ -336,9 +313,7 @@ namespace rpggame_A
 
         private Label getNameByOnject(ISkill unit)
         {
-
             return this.characterNames.First(p => p.Tag == unit);
-
         }
 
         public void LoadResources()
@@ -364,7 +339,6 @@ namespace rpggame_A
             this.charmItem = Image.FromFile(Shared.CharmItem);
             this.lifeItem = Image.FromFile(Shared.LifeItem);
            // this.stoneOnThrow.Height = 20;
-
         }
     }
 

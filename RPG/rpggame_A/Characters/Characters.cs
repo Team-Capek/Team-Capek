@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using rpggame_A.Constructions;
-using rpggame_A.Interfaces;
-
-namespace rpggame_A
+﻿namespace rpggame_A
 {
+    using Constructions;
+    using Interfaces;
+
     public class Characters : WarUnit
     {
         public Characters(double x, double y, double width, double height,

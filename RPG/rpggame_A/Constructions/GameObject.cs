@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace rpggame_A
+﻿namespace rpggame_A
 {
     public abstract class GameObject : IGameObject
     {
@@ -15,7 +10,6 @@ namespace rpggame_A
             this.Width = width;
             this.Height = height;
         }
-
 
         public double X
         {

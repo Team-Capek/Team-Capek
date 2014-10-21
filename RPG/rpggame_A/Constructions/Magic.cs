@@ -1,20 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using rpggame_A.Constructions;
-
-namespace rpggame_A
+﻿namespace rpggame_A
 {
+    using Constructions;
+
     public abstract class Magic : GameObject, ITimeOuted, IRenderable
     {
-
         private int currentTimeout;
         
-
-        public Magic(double x, double y, double width, double height, WarUnit thrower, int range,
-            int takeLife, int timeOut,   SpriteType spriteType, Magics magicType
-            ) :base( x,  y,  width,  height)
+        public Magic(double x, double y, double width, double height, 
+            WarUnit thrower, int range, int takeLife, int timeOut,   
+            SpriteType spriteType, Magics magicType) 
+            :base( x,  y,  width,  height)
         {
             this.MagicThrower = thrower;
             this.Range = range;
@@ -22,16 +17,11 @@ namespace rpggame_A
             this.TimeOut = timeOut;          
             this.HasTimeout =false;
             this.SpriteType = spriteType;
-
-           
-
             this.X -= this.Width / 2 -20;
             this.Y -= this.Height / 2 -20;
             this.MagicType = magicType;
             this.TakeLife = takeLife;
-
         }
-
 
         public Magics MagicType {get;set;}
 

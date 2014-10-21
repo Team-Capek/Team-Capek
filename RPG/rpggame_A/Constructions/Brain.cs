@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-
-namespace rpggame_A
+﻿namespace rpggame_A
 {
+    using System;
+    using System.ComponentModel;
+
     public class Brain : INotifyPropertyChanged
     {
 
