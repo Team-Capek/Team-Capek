@@ -1,4 +1,4 @@
-﻿namespace rpggame_A
+﻿namespace Capec.RPGGame.Constructions
 {
     public enum SpriteType
     {

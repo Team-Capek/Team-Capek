@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using rpggame_A.Constructions;
-using rpggame_A.Interfaces;
+﻿using Capec.RPGGame.Interfaces;
 
-namespace rpggame_A
+namespace Capec.RPGGame.Constructions
 {
     public abstract class WarUnit : GameObject, ISkill, IMovable, IRenderable, IMagicable
     {

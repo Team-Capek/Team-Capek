@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using rpggame_A.Constructions;
+﻿using Capec.RPGGame.Constructions;
 
-namespace rpggame_A
+namespace Capec.RPGGame.Items
 {
     public class FireBall : Magic
     {

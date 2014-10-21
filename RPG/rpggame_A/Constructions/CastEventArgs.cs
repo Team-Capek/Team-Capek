@@ -1,7 +1,7 @@
-﻿namespace rpggame_A
-{
-    using System;
+﻿using System;
 
+namespace Capec.RPGGame.Constructions
+{
     public class CastEventArgs:EventArgs
     {
 

@@ -1,8 +1,8 @@
-﻿namespace rpggame_A
-{
-    using System;
-    using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 
+namespace Capec.RPGGame.Constructions
+{
     public class Brain : INotifyPropertyChanged
     {
 

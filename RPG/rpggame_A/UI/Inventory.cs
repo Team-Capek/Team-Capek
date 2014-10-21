@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
+﻿using System.Collections.Generic;
 using System.Drawing;
-using rpggame_A.Utility;
+using System.Windows.Forms;
+using Capec.RPGGame.Constructions;
+using Capec.RPGGame.Utility;
 
-
-namespace rpggame_A
+namespace Capec.RPGGame.UI
 {
     public class Inventory
     {
@@ -69,12 +66,12 @@ namespace rpggame_A
 
 
 
-        public void AddItem(Items target) 
+        public void AddItem(Interfaces.Items target) 
         {
             foreach (PictureBox item in inventory) 
             {
                 SetSkills(target);
-                if (item.Tag == "Box") 
+                if (item.Tag.ToString() == "Box") 
                 {
                     switch (target.SpriteType) 
                     {
@@ -104,7 +101,7 @@ namespace rpggame_A
             }
         }
 
-        private void SetSkills(Items item) 
+        private void SetSkills(Interfaces.Items item) 
         {
             this.GiveLifeSkill += item.GiveLife;
             this.GiveDefenceSkill += item.GiveDefence;

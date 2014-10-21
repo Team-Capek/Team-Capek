@@ -1,10 +1,7 @@
-﻿using rpggame_A.Constructions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Capec.RPGGame.Constructions;
+using Capec.RPGGame.Interfaces;
 
-namespace rpggame_A
+namespace Capec.RPGGame.Items
 {
     public class Stoune : Magic, IMovable
     {

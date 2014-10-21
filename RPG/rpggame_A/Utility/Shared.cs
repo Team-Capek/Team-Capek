@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace rpggame_A.Utility
+namespace Capec.RPGGame.Utility
 {
   public static class Shared
     {

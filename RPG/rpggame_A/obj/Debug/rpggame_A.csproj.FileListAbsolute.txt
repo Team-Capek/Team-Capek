@@ -52,3 +52,4 @@ D:\SoftUni\TeamWork\Team-Capek\Team-Capek\branches\CAPEC_WORK\RPG\rpggame_A\obj\
 D:\SoftUni\TeamWork\Team-Capek\Team-Capek\branches\CAPEC_WORK\RPG\rpggame_A\obj\Debug\rpggame_A.GameWindow.resources
 D:\SoftUni\TeamWork\Team-Capek\Team-Capek\branches\CAPEC_WORK\RPG\rpggame_A\obj\Debug\rpggame_A.Properties.Resources.resources
 D:\SoftUni\TeamWork\Team-Capek\Team-Capek\branches\CAPEC_WORK\RPG\rpggame_A\obj\Debug\rpggame_A.csproj.GenerateResource.Cache
+D:\SoftUni\TeamWork\Team-Capek\Team-Capek\branches\CAPEC_WORK\RPG\rpggame_A\obj\Debug\rpggame_A.Engine.GameWindow.resources

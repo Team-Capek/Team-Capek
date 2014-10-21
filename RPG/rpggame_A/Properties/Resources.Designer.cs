@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace rpggame_A.Properties {
+namespace Capec.RPGGame.Properties {
     using System;
     
     

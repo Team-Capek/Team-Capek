@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using rpggame_A.Interfaces;
+﻿using Capec.RPGGame.Constructions;
 
-namespace rpggame_A
+namespace Capec.RPGGame.Interfaces
 {
     public interface IMagicable
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace rpggame_A
+namespace Capec.RPGGame
 {
     static class RPG_RUN
     {
@@ -15,7 +15,7 @@ namespace rpggame_A
         [STAThread]
         static void Main()
         {
-             Engine.Istanse.Run();
+             Engine.Engine.Istanse.Run();
         }
     }
 }

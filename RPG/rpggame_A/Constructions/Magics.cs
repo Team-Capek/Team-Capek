@@ -1,4 +1,4 @@
-﻿namespace rpggame_A.Constructions
+﻿namespace Capec.RPGGame.Constructions
 {
     public enum Magics
     {

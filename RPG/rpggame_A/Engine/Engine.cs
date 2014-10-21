@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Drawing;
-using rpggame_A.Utility;
-using rpggame_A.Constructions;
-using rpggame_A.Interfaces;
+using System.Linq;
+using System.Windows.Forms;
+using Capec.RPGGame.Constructions;
+using Capec.RPGGame.Utility;
+using Capec.RPGGame.UI;
+using Capec.RPGGame.Characters;
+using Capec.RPGGame.Interfaces;
+using Capec.RPGGame.Items;
 
-
-namespace rpggame_A
+namespace Capec.RPGGame.Engine
 {
     class Engine
     {
@@ -29,11 +29,11 @@ namespace rpggame_A
         private Brain bossBrain;
         private IControlerable bossControler;
         private Inventory inventory;
-        private Items fireItem;
-        private Items stoneItem;
-        private Items lifeItem;
-        private Items charmItem;
-        private List<Items> items;
+        private Interfaces.Items fireItem;
+        private Interfaces.Items stoneItem;
+        private Interfaces.Items lifeItem;
+        private Interfaces.Items charmItem;
+        private List<Interfaces.Items> items;
 
         public static Engine Istanse
         {
@@ -78,7 +78,7 @@ namespace rpggame_A
         {
             magics = new List<Magic>();
             warUnits = new List<WarUnit>();
-            items = new List<Items>();
+            items = new List<Interfaces.Items>();
             space = new GameWindow();
             timer = new Timer();
             timer.Interval = 100;
@@ -226,7 +226,7 @@ namespace rpggame_A
                 }
 
                
-                foreach (Items item in items) 
+                foreach (Interfaces.Items item in items) 
                 {
                     if (IsInRange(hero, item))
                     {
@@ -258,13 +258,13 @@ namespace rpggame_A
       
         private void InitialHero()
         {
-            hero = new Characters(100, 100, 110, 100, 100, 2, 5, 30, 10, 20,
+            hero = new Characters.Characters(100, 100, 110, 100, 100, 2, 5, 30, 10, 20,
                 new Vector2(0, 0), SpriteType.Mage, Shared.HeroHumanName, Shared.HeroHumanMaxLife);
 
-            boss = new Characters(100, 300, 110, 110, 200, 2, 5, 30, 10, 10,
+            boss = new Characters.Characters(100, 300, 110, 110, 200, 2, 5, 30, 10, 10,
                 new Vector2(0, 0), SpriteType.Ghoul, Shared.BossMonsterName, Shared.BossMonsterMaxLife);
 
-            stone = new Characters(350, 250, 310, 110, 200, 2, 5, 30, 10, 10,
+            stone = new Characters.Characters(350, 250, 310, 110, 200, 2, 5, 30, 10, 10,
                 new Vector2(0, 0), SpriteType.Wall, Shared.BossMonsterName, Shared.BossMonsterMaxLife);
 
             fireItem = new FireBallMagic(500, 40, 30, 30, SpriteType.FireMagic, 1, 1, 5 );

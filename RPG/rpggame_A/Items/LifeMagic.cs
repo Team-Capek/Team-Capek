@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Capec.RPGGame.Constructions;
 
-namespace rpggame_A
+namespace Capec.RPGGame.Items
 {
-    public class LifeMagic : Items
+    public class LifeMagic : Capec.RPGGame.Interfaces.Items
     {
         public LifeMagic(int x, int y, int width, int height, SpriteType type,
             int giveLife, int giveAttack, int giveDefence)

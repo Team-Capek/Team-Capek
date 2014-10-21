@@ -1,15 +1,17 @@
-﻿namespace rpggame_A
-{
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Windows.Forms;
-    using System.Drawing;
-    using System.Runtime.InteropServices;
-    using Utility;
-    using Properties;
-    using System.Drawing.Text;
+﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Text;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Windows.Forms;
+using Capec.RPGGame.Constructions;
+using Capec.RPGGame.Properties;
+using Capec.RPGGame.Utility;
+using Capec.RPGGame.Interfaces;
 
+namespace Capec.RPGGame.Engine
+{
     public class DrawGameObject : IDraw
     {
         [DllImport("gdi32.dll")]

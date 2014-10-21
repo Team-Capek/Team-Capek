@@ -1,4 +1,6 @@
-﻿namespace rpggame_A
+﻿using Capec.RPGGame.Interfaces;
+
+namespace Capec.RPGGame.Constructions
 {
     public abstract class GameObject : IGameObject
     {

@@ -1,7 +1,7 @@
-﻿namespace rpggame_A
-{
-    using Constructions;
+﻿using Capec.RPGGame.Interfaces;
 
+namespace Capec.RPGGame.Constructions
+{
     public abstract class Magic : GameObject, ITimeOuted, IRenderable
     {
         private int currentTimeout;

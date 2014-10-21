@@ -1,7 +1,8 @@
-﻿namespace rpggame_A
-{
-    using System;
+﻿using System;
+using Capec.RPGGame.Interfaces;
 
+namespace Capec.RPGGame.Constructions
+{
     public  class BrainControler : IControlerable
     {
 

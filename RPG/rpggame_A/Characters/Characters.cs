@@ -1,8 +1,9 @@
-﻿namespace rpggame_A
-{
-    using Constructions;
-    using Interfaces;
+﻿using Capec.RPGGame.Constructions;
+using Capec.RPGGame.Interfaces;
+using Capec.RPGGame.Items;
 
+namespace Capec.RPGGame.Characters
+{
     public class Characters : WarUnit
     {
         public Characters(double x, double y, double width, double height,

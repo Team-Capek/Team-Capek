@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Capec.RPGGame.Constructions;
 
-namespace rpggame_A
+namespace Capec.RPGGame.Items
 {
-    public class CharmMagic : Items
+    public class CharmMagic : Interfaces.Items
     {
         public CharmMagic(int x, int y, int width, int height, SpriteType type,
             int giveLife, int giveAttack, int giveDefence)
