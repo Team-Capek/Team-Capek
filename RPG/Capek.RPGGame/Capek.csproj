@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BDABD6FF-A4F2-4C23-A4CC-F97F603C77C5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>rpggame_A</RootNamespace>
+    <AssemblyName>rpggame_A</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RPGGame\Blood.cs" />
+    <Compile Include="RPGGame\Decor.cs" />
+    <Compile Include="RPGGame\Interfaces\AIControler.cs" />
+    <Compile Include="RPGGame\Constructions\Brain.cs" />
+    <Compile Include="RPGGame\Constructions\BrainControler.cs" />
+    <Compile Include="RPGGame\Constructions\CastEventArgs.cs" />
+    <Compile Include="RPGGame\Characters\Characters.cs" />
+    <Compile Include="RPGGame\Items\CharmMagic.cs" />
+    <Compile Include="RPGGame\Constructions\Magics.cs" />
+    <Compile Include="RPGGame\Constructions\Reaction.cs" />
+    <Compile Include="RPGGame\Engine\Engine.cs" />
+    <Compile Include="RPGGame\Items\FireBall.cs" />
+    <Compile Include="RPGGame\Items\FireBallMagic.cs" />
+    <Compile Include="RPGGame\Interfaces\MagicType.cs" />
+    <Compile Include="RPGGame\UI\InventoryController.cs" />
+    <Compile Include="RPGGame\Items\StoneMagic.cs" />
+    <Compile Include="RPGGame\Engine\GameWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPGGame\Engine\GameWindow.Designer.cs">
+      <DependentUpon>GameWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPGGame\Interfaces\IAIBrain.cs" />
+    <Compile Include="RPGGame\Interfaces\IDrawCompositGameObject.cs" />
+    <Compile Include="RPGGame\Interfaces\IMagicable.cs" />
+    <Compile Include="RPGGame\Interfaces\IDraw.cs" />
+    <Compile Include="RPGGame\Constructions\GameObject.cs" />
+    <Compile Include="RPGGame\Interfaces\IRenderable.cs" />
+    <Compile Include="RPGGame\Constructions\SpriteType.cs" />
+    <Compile Include="RPGGame\Constructions\Vector2.cs" />
+    <Compile Include="RPGGame\Constructions\WarUnit.cs" />
+    <Compile Include="RPGGame\Interfaces\IMovable.cs" />
+    <Compile Include="RPGGame\Interfaces\IGameObject.cs" />
+    <Compile Include="RPGGame\Interfaces\IControlerable.cs" />
+    <Compile Include="RPGGame\Interfaces\KeyBoard.cs" />
+    <Compile Include="RPGGame\Interfaces\ISkill.cs" />
+    <Compile Include="RPGGame\Interfaces\Items.cs" />
+    <Compile Include="RPGGame\Constructions\Magic.cs" />
+    <Compile Include="RPGGame\Engine\DrawGameObject.cs" />
+    <Compile Include="RPGGame\Items\LifeMagic.cs" />
+    <Compile Include="RPGGame\UI\Inventory.cs" />
+    <Compile Include="RPGGame\Interfaces\ITimeOuted.cs" />
+    <Compile Include="RPGGame\RPG_RUN.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RPGGame\Constructions\Struvtures.cs" />
+    <Compile Include="RPGGame\Utility\SimpleProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPGGame\Items\Stoune.cs" />
+    <Compile Include="RPGGame\Utility\Shared.cs" />
+    <EmbeddedResource Include="RPGGame\Engine\GameWindow.resx">
+      <DependentUpon>GameWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="RPGGame\ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RPGGame\App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="RPGGame\Resources\CloisterBlack.ttf" />
+    <None Include="RPGGame\Resources\ghoul1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RPGGame\Resources\GoticaBastard.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RPGGame\Resources\heroTest.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RPGGame\Resources\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RPGGame\Resources\grassMlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RPGGame\Resources\groundGrass.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RPGGame\Resources\HeadWall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RPGGame\Resources\HeadWallGradShad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RPGGame\Resources\HeadWallGradShad_V1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RPGGame\Resources\groundGrassSand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RPGGame\Resources\groundGrassSand1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RPGGame\Resources\groundGrassSand2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

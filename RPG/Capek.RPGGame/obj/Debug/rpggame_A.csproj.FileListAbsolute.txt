@@ -1,0 +1,73 @@
+C:\Users\PO\Desktop\PORealisations\Qbrawser\rpggame_A\rpggame_A\bin\Debug\rpggame_A.exe.config
+C:\Users\PO\Desktop\PORealisations\Qbrawser\rpggame_A\rpggame_A\obj\Debug\rpggame_A.csprojResolveAssemblyReference.cache
+C:\Users\PO\Desktop\PORealisations\Qbrawser\rpggame_A\rpggame_A\obj\Debug\rpggame_A.Form1.resources
+C:\Users\PO\Desktop\PORealisations\Qbrawser\rpggame_A\rpggame_A\obj\Debug\rpggame_A.Properties.Resources.resources
+C:\Users\PO\Desktop\PORealisations\Qbrawser\rpggame_A\rpggame_A\obj\Debug\rpggame_A.csproj.GenerateResource.Cache
+C:\Users\PO\Desktop\PORealisations\Qbrawser\rpggame_A\rpggame_A\bin\Debug\rpggame_A.exe
+C:\Users\PO\Desktop\PORealisations\Qbrawser\rpggame_A\rpggame_A\bin\Debug\rpggame_A.pdb
+C:\Users\PO\Desktop\PORealisations\Qbrawser\rpggame_A\rpggame_A\obj\Debug\rpggame_A.exe
+C:\Users\PO\Desktop\PORealisations\Qbrawser\rpggame_A\rpggame_A\obj\Debug\rpggame_A.pdb
+C:\Users\protecta\Desktop\rpggame_A\rpggame_A\bin\Debug\rpggame_A.exe.config
+C:\Users\protecta\Desktop\rpggame_A\rpggame_A\obj\Debug\rpggame_A.exe
+C:\Users\protecta\Desktop\rpggame_A\rpggame_A\obj\Debug\rpggame_A.pdb
+C:\Users\protecta\Desktop\rpggame_A\rpggame_A\bin\Debug\rpggame_A.exe
+C:\Users\protecta\Desktop\rpggame_A\rpggame_A\bin\Debug\rpggame_A.pdb
+C:\Users\protecta\Desktop\rpggame_A\rpggame_A\obj\Debug\rpggame_A.csprojResolveAssemblyReference.cache
+C:\Users\protecta\Desktop\rpggame_A\rpggame_A\obj\Debug\rpggame_A.Form1.resources
+C:\Users\protecta\Desktop\rpggame_A\rpggame_A\obj\Debug\rpggame_A.Properties.Resources.resources
+C:\Users\protecta\Desktop\rpggame_A\rpggame_A\obj\Debug\rpggame_A.csproj.GenerateResource.Cache
+C:\Users\PO\Desktop\RPG\rpggame_A\bin\Debug\rpggame_A.exe.config
+C:\Users\PO\Desktop\RPG\rpggame_A\obj\Debug\rpggame_A.exe
+C:\Users\PO\Desktop\RPG\rpggame_A\obj\Debug\rpggame_A.pdb
+C:\Users\PO\Desktop\RPG\rpggame_A\bin\Debug\rpggame_A.exe
+C:\Users\PO\Desktop\RPG\rpggame_A\bin\Debug\rpggame_A.pdb
+C:\Users\PO\Desktop\RPG\rpggame_A\obj\Debug\rpggame_A.csprojResolveAssemblyReference.cache
+C:\Users\PO\Desktop\RPG\rpggame_A\obj\Debug\rpggame_A.Form1.resources
+C:\Users\PO\Desktop\RPG\rpggame_A\obj\Debug\rpggame_A.Properties.Resources.resources
+C:\Users\PO\Desktop\RPG\rpggame_A\obj\Debug\rpggame_A.csproj.GenerateResource.Cache
+\\PROTECTA-PC\Users\POREAL\RPG\rpggame_A\bin\Debug\rpggame_A.exe.config
+\\PROTECTA-PC\Users\POREAL\RPG\rpggame_A\obj\Debug\rpggame_A.exe
+\\PROTECTA-PC\Users\POREAL\RPG\rpggame_A\obj\Debug\rpggame_A.pdb
+\\PROTECTA-PC\Users\POREAL\RPG\rpggame_A\bin\Debug\rpggame_A.exe
+\\PROTECTA-PC\Users\POREAL\RPG\rpggame_A\bin\Debug\rpggame_A.pdb
+\\PROTECTA-PC\Users\POREAL\RPG\rpggame_A\obj\Debug\rpggame_A.csprojResolveAssemblyReference.cache
+\\PROTECTA-PC\Users\POREAL\RPG\rpggame_A\obj\Debug\rpggame_A.Properties.Resources.resources
+\\PROTECTA-PC\Users\POREAL\RPG\rpggame_A\obj\Debug\rpggame_A.csproj.GenerateResource.Cache
+\\PROTECTA-PC\Users\POREAL\RPG\rpggame_A\obj\Debug\rpggame_A.GameWindow.resources
+C:\Users\Yulia\Documents\Programming\II_Level\OOP\TeamWork\New folder\trunk\RPG\rpggame_A\bin\Debug\rpggame_A.exe.config
+C:\Users\Yulia\Documents\Programming\II_Level\OOP\TeamWork\New folder\trunk\RPG\rpggame_A\obj\Debug\rpggame_A.exe
+C:\Users\Yulia\Documents\Programming\II_Level\OOP\TeamWork\New folder\trunk\RPG\rpggame_A\obj\Debug\rpggame_A.pdb
+C:\Users\Yulia\Documents\Programming\II_Level\OOP\TeamWork\New folder\trunk\RPG\rpggame_A\bin\Debug\rpggame_A.exe
+C:\Users\Yulia\Documents\Programming\II_Level\OOP\TeamWork\New folder\trunk\RPG\rpggame_A\bin\Debug\rpggame_A.pdb
+C:\Users\Yulia\Documents\Programming\II_Level\OOP\TeamWork\New folder\trunk\RPG\rpggame_A\obj\Debug\rpggame_A.csprojResolveAssemblyReference.cache
+C:\Users\Yulia\Documents\Programming\II_Level\OOP\TeamWork\New folder\trunk\RPG\rpggame_A\obj\Debug\rpggame_A.GameWindow.resources
+C:\Users\Yulia\Documents\Programming\II_Level\OOP\TeamWork\New folder\trunk\RPG\rpggame_A\obj\Debug\rpggame_A.Properties.Resources.resources
+C:\Users\Yulia\Documents\Programming\II_Level\OOP\TeamWork\New folder\trunk\RPG\rpggame_A\obj\Debug\rpggame_A.csproj.GenerateResource.Cache
+D:\SOFTUNI\OOP\TeamWork\RPG_20.10.2014\rpggame_A\bin\Debug\rpggame_A.exe.config
+D:\SOFTUNI\OOP\TeamWork\RPG_20.10.2014\rpggame_A\obj\Debug\rpggame_A.exe
+D:\SOFTUNI\OOP\TeamWork\RPG_20.10.2014\rpggame_A\obj\Debug\rpggame_A.pdb
+D:\SOFTUNI\OOP\TeamWork\RPG_20.10.2014\rpggame_A\bin\Debug\rpggame_A.exe
+D:\SOFTUNI\OOP\TeamWork\RPG_20.10.2014\rpggame_A\bin\Debug\rpggame_A.pdb
+D:\SOFTUNI\OOP\TeamWork\RPG_20.10.2014\rpggame_A\obj\Debug\rpggame_A.csprojResolveAssemblyReference.cache
+D:\SOFTUNI\OOP\TeamWork\RPG_20.10.2014\rpggame_A\obj\Debug\rpggame_A.GameWindow.resources
+D:\SOFTUNI\OOP\TeamWork\RPG_20.10.2014\rpggame_A\obj\Debug\rpggame_A.Properties.Resources.resources
+D:\SOFTUNI\OOP\TeamWork\RPG_20.10.2014\rpggame_A\obj\Debug\rpggame_A.csproj.GenerateResource.Cache
+C:\Users\PO\Documents\GitHub\Team-Capek\RPG\rpggame_A\bin\Debug\rpggame_A.exe.config
+C:\Users\PO\Documents\GitHub\Team-Capek\RPG\rpggame_A\obj\Debug\rpggame_A.exe
+C:\Users\PO\Documents\GitHub\Team-Capek\RPG\rpggame_A\obj\Debug\rpggame_A.pdb
+C:\Users\PO\Documents\GitHub\Team-Capek\RPG\rpggame_A\bin\Debug\rpggame_A.exe
+C:\Users\PO\Documents\GitHub\Team-Capek\RPG\rpggame_A\bin\Debug\rpggame_A.pdb
+C:\Users\PO\Documents\GitHub\Team-Capek\RPG\rpggame_A\obj\Debug\rpggame_A.csprojResolveAssemblyReference.cache
+C:\Users\PO\Documents\GitHub\Team-Capek\RPG\rpggame_A\obj\Debug\rpggame_A.GameWindow.resources
+C:\Users\PO\Documents\GitHub\Team-Capek\RPG\rpggame_A\obj\Debug\rpggame_A.Properties.Resources.resources
+C:\Users\PO\Documents\GitHub\Team-Capek\RPG\rpggame_A\obj\Debug\rpggame_A.csproj.GenerateResource.Cache
+D:\SoftUni\TeamWork\Team-Capek\Team-Capek\trunk\RPG\rpggame_A\bin\Debug\rpggame_A.exe.config
+D:\SoftUni\TeamWork\Team-Capek\Team-Capek\trunk\RPG\rpggame_A\obj\Debug\rpggame_A.exe
+D:\SoftUni\TeamWork\Team-Capek\Team-Capek\trunk\RPG\rpggame_A\obj\Debug\rpggame_A.pdb
+D:\SoftUni\TeamWork\Team-Capek\Team-Capek\trunk\RPG\rpggame_A\bin\Debug\rpggame_A.exe
+D:\SoftUni\TeamWork\Team-Capek\Team-Capek\trunk\RPG\rpggame_A\bin\Debug\rpggame_A.pdb
+D:\SoftUni\TeamWork\Team-Capek\Team-Capek\trunk\RPG\rpggame_A\obj\Debug\rpggame_A.csprojResolveAssemblyReference.cache
+D:\SoftUni\TeamWork\Team-Capek\Team-Capek\trunk\RPG\rpggame_A\obj\Debug\rpggame_A.Properties.Resources.resources
+D:\SoftUni\TeamWork\Team-Capek\Team-Capek\trunk\RPG\rpggame_A\obj\Debug\rpggame_A.csproj.GenerateResource.Cache
+D:\SoftUni\TeamWork\Team-Capek\Team-Capek\trunk\RPG\rpggame_A\obj\Debug\Capek.RPGGame.GameWindow.resources
+D:\SoftUni\TeamWork\Team-Capek\Team-Capek\trunk\RPG\rpggame_A\obj\Debug\Capek.RPGGame.Properties.Resources.resources

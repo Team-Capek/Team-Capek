@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Capek.RPGGame.Engine" Collapsed="true">
+    <Position X="4.5" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQBIAAAA0QhGIKAAQgAAEAAEAAUAAACMAABkgQABBo=</HashCode>
+      <FileName>Engine\Engine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capek.RPGGame.GameWindow" Collapsed="true">
+    <Position X="4.5" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Engine\GameWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capek.RPGGame.RPG_RUN" Collapsed="true">
+    <Position X="2.5" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>RPG_RUN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capek.RPGGame.Properties.Settings" Collapsed="true">
+    <Position X="2.5" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capek.RPGGame.KeyBoard">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAGAAAAAAAAAAQAAAAAAABAACAIAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\KeyBoard.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Capek.RPGGame.GameObject">
+    <Position X="6.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAEQAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Constructions\GameObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Capek.RPGGame.WarUnit">
+    <Position X="3" Y="9.25" Width="1.5" />
+    <InheritanceLine Type="Capek.RPGGame.GameObject" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.75" Y="7.824" />
+        <Point X="6.75" Y="8.219" />
+        <Point X="3.938" Y="8.219" />
+        <Point X="3.938" Y="9.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAEABAAAAIAAAAAAACAAAAABCAAAAAAAAAAAAkABDEA=</HashCode>
+      <FileName>Constructions\WarUnit.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Capek.RPGGame.Magic">
+    <Position X="6" Y="9.25" Width="1.5" />
+    <InheritanceLine Type="Capek.RPGGame.GameObject" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.75" Y="7.824" />
+        <Point X="6.75" Y="9.095" />
+        <Point X="6.75" Y="9.095" />
+        <Point X="6.75" Y="9.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAJAAACAYAACAAAAAAAAAAAAAAAAAAAEAAAAE=</HashCode>
+      <FileName>Constructions\Magic.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Capek.RPGGame.Items">
+    <Position X="10.25" Y="9.25" Width="1.5" />
+    <InheritanceLine Type="Capek.RPGGame.GameObject" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.75" Y="7.824" />
+        <Point X="6.75" Y="8.25" />
+        <Point X="11.062" Y="8.25" />
+        <Point X="11.062" Y="9.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAQABAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Interfaces\Items.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Capek.RPGGame.Structures">
+    <Position X="2.5" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Constructions\Struvtures.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capek.RPGGame.Characters">
+    <Position X="3" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Characters\Characters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capek.RPGGame.DrawGameObject" Collapsed="true">
+    <Position X="0.5" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EIAUBiwQASCEiGIBBAIAAAgEBAUCCAkAwAAAigDCAAg=</HashCode>
+      <FileName>Engine\DrawGameObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Capek.RPGGame.Utility.Shared" Collapsed="true">
+    <Position X="2.5" Y="22" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CCUQAAIAAQIMAyKAIAAGCAAAAIAAgAiAAAQCAAgIAAI=</HashCode>
+      <FileName>Utility\Shared.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capek.RPGGame.FireBall">
+    <Position X="7.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\FireBall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capek.RPGGame.CastEventArgs">
+    <Position X="0.5" Y="20.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Constructions\CastEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capek.RPGGame.BrainControler">
+    <Position X="0.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAEAAAAAAAAAAQAAAAAAABAACAgAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Constructions\BrainControler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Capek.RPGGame.Brain">
+    <Position X="0.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAABABACAAAgAgAAIAAAAEAAiAQAAgAAAAAAKAAAAAA=</HashCode>
+      <FileName>Constructions\Brain.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Capek.RPGGame.Properties.Resources" Collapsed="true">
+    <Position X="4.5" Y="22" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAQAAAAAAAgIQAABEEAABQAAAAEAAAAAEACAEIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capek.RPGGame.Stoune">
+    <Position X="5" Y="13.75" Width="1.5" />
+    <InheritanceLine Type="Capek.RPGGame.Magic" FixedToPoint="true">
+      <Path>
+        <Point X="6.75" Y="12.732" />
+        <Point X="6.75" Y="13.375" />
+        <Point X="5.625" Y="13.375" />
+        <Point X="5.625" Y="13.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAACAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Stoune.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Capek.RPGGame.Inventory">
+    <Position X="13.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAQIQAAQAAAEgAAAAgECAABgAAAgAAA=</HashCode>
+      <FileName>UI\Inventory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capek.RPGGame.StoneMagic">
+    <Position X="15" Y="12.25" Width="1.5" />
+    <InheritanceLine Type="Capek.RPGGame.Items" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="11" Y="11.511" />
+        <Point X="11" Y="11.895" />
+        <Point X="15.75" Y="11.895" />
+        <Point X="15.75" Y="12.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\StoneMagic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capek.RPGGame.CopyOfForm1" Collapsed="true">
+    <Position X="4.5" Y="21" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Engine\GameWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capek.RPGGame.FireBallMagic">
+    <Position X="8.75" Y="12.25" Width="1.5" />
+    <InheritanceLine Type="Capek.RPGGame.Items" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="11" Y="11.511" />
+        <Point X="11" Y="11.906" />
+        <Point X="9.5" Y="11.906" />
+        <Point X="9.5" Y="12.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\FireBallMagic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capek.RPGGame.CharmMagic">
+    <Position X="10.75" Y="12.25" Width="1.5" />
+    <InheritanceLine Type="Capek.RPGGame.Items" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="11" Y="11.511" />
+        <Point X="11" Y="12.099" />
+        <Point X="11" Y="12.099" />
+        <Point X="11" Y="12.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\CharmMagic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capek.RPGGame.LifeMagic">
+    <Position X="12.75" Y="12.25" Width="1.5" />
+    <InheritanceLine Type="Capek.RPGGame.Items" ManuallyRouted="true">
+      <Path>
+        <Point X="11" Y="11.511" />
+        <Point X="11" Y="11.895" />
+        <Point X="13.5" Y="11.895" />
+        <Point X="13.5" Y="12.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\LifeMagic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capek.RPGGame.InventoryController">
+    <Position X="0.5" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\InventoryController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capek.RPGGame.Decor">
+    <Position X="8.25" Y="9.25" Width="1.5" />
+    <InheritanceLine Type="Capek.RPGGame.GameObject" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="6.75" Y="7.824" />
+        <Point X="6.75" Y="8.219" />
+        <Point X="9" Y="8.219" />
+        <Point X="9" Y="9.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Decor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Capek.RPGGame.Blood">
+    <Position X="8.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Blood.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Capek.RPGGame.IControlerable">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAEAAAAAAAAAAQAAAAAAABAACAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IControlerable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Capek.RPGGame.IGameObject">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAEQAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Interfaces\IGameObject.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Capek.RPGGame.ISkill">
+    <Position X="4.75" Y="3.25" Width="1.5" />
+    <InheritanceLine Type="Capek.RPGGame.IGameObject" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.688" Y="2.373" />
+        <Point X="4.688" Y="2.631" />
+        <Point X="5.562" Y="2.631" />
+        <Point X="5.562" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAgABBEA=</HashCode>
+      <FileName>Interfaces\ISkill.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Capek.RPGGame.IMovable">
+    <Position X="8.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAACAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IMovable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Capek.RPGGame.IRenderable">
+    <Position X="2.5" Y="3.25" Width="1.5" />
+    <InheritanceLine Type="Capek.RPGGame.IGameObject" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.688" Y="2.373" />
+        <Point X="4.688" Y="2.631" />
+        <Point X="3.188" Y="2.631" />
+        <Point X="3.188" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Interfaces\IRenderable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Capek.RPGGame.IDraw">
+    <Position X="0.5" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAACAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IDraw.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Capek.RPGGame.IMagicable">
+    <Position X="10.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IMagicable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Capek.RPGGame.ITimeOuted">
+    <Position X="6.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Interfaces\ITimeOuted.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Capek.RPGGame.SpriteType">
+    <Position X="11.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAACQAAACAAAAAAAAAAAEAAQQEAgAAAICCAA=</HashCode>
+      <FileName>Constructions\SpriteType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
