@@ -59,7 +59,7 @@ namespace rpggame_A
         private Image mageImage, mageImageL, mageImageR, mageImageD, mageImageU,
             ghoulImage, ghoulImageL, ghoulImageR, ghoulImageU, ghoulImageD,
             fireItem, stoneItem, lifeItem, charmItem, stoneOnThrow,
-            healthPotionImage, treeImage, wallImage, fireImage, spitImage;
+            healthPotionImage, treeImage, wallImage, fireImage, spitImage, bloodImage ;
       
         public DrawGameObject(Form form)
         {
@@ -320,6 +320,9 @@ namespace rpggame_A
                 case SpriteType.Stone:
                     image = this.stoneOnThrow;
                     break;
+                case SpriteType.Blood:
+                    image = this.bloodImage;
+                    break;
                 default:
                     image = this.wallImage;
                     break;
@@ -363,7 +366,7 @@ namespace rpggame_A
             this.stoneOnThrow=Image.FromFile(Shared.StoneItemOnThrow);
             this.charmItem = Image.FromFile(Shared.CharmItem);
             this.lifeItem = Image.FromFile(Shared.LifeItem);
-           // this.stoneOnThrow.Height = 20;
+            this.bloodImage=Image.FromFile(Shared.BloodDecorImagePath);
 
         }
     }

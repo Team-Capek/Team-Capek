@@ -19,6 +19,8 @@ namespace rpggame_A.Utility
 
         public const int FireBallMagicRange = 100;
 
+        public const string BloodDecorImagePath= "../../Resources/blood.png";
+
         public const string InventoryBoxPath = "../../Resources/inventoryBox.png";
 
         public const string MageImagePath = "../../Resources/mage.png";

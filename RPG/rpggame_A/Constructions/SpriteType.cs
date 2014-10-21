@@ -19,7 +19,8 @@ namespace rpggame_A
         StoneMagic,
         LifeMagic,
         CharmMagic,
-        Stone
+        Stone,
+        Blood
     
     }
 }

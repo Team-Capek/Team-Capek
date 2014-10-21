@@ -12,6 +12,8 @@ namespace rpggame_A
     public class Inventory
     {
         private List<PictureBox> inventory;
+        private SimpleProgressBar expirienceBar;
+        private Label status;
         public string focus;
         const int width = 50;
         const int height = 50;
@@ -29,9 +31,13 @@ namespace rpggame_A
             this.x = x;
             this.y = y;
 
+           
+
             this.GiveLifeSkill = 0;
             this.GiveDefenceSkill = 0;
             this.GiveAttackSkill = 0;
+
+           
 
             for (int i = 0; i < picNumber; i++)
             {
@@ -51,8 +57,38 @@ namespace rpggame_A
                 
             }
 
+                
 
+                expirienceBar = new SimpleProgressBar();
+                expirienceBar.Height = height;
+                expirienceBar.Width = 200;
+                expirienceBar.ForeColor = Color.Blue;
+                expirienceBar.Left = this.x - expirienceBar.Width;
+                expirienceBar.Top = this.y;
+                expirienceBar.Maximum = 2000;
+                canvas.Controls.Add(expirienceBar);
 
+                Label expLable = new Label();
+                expLable.Text = "Expirience";
+                expLable.Height = 10;
+                expLable.Width = 50;
+                expLable.Font = new Font("Algerian", 6);
+                expLable.ForeColor = Color.White;
+                expLable.BackColor = Color.FromArgb(10,60,30) ;
+                expLable.Top = this.y+1;// -expLable.Height;
+                expLable.Left = expirienceBar.Left+1;           
+                canvas.Controls.Add(expLable);
+                canvas.Controls.SetChildIndex(expLable, 0);
+
+                status=new Label();
+                status.Text = "Empty Inventory";
+                status.Top = this.y;
+                status.Left = picNumber * width + this.x;
+                status.Width = 2 * width;
+                status.Height = height;
+                status.Font = new Font("Algerian", 9);
+                status.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+                canvas.Controls.Add(status);
           
         }
 
@@ -63,10 +99,24 @@ namespace rpggame_A
                 if ((sender as Control).Equals(item))
                 {
                    focus =item.Tag.ToString();
+                   SetStatus();
                 }
             }
         }
 
+        private void SetStatus() 
+        {
+            switch (focus)
+            {
+                case "fireBox": status.Text = "Fire Ball"; break;
+                case "stoneBox": status.Text = "Magic Stone"; break;
+                case "lifeBox": status.Text = "Life potion"; break;
+                case "charmBox": status.Text = "Lucky Item"; break;
+
+                default:status.Text = "Empty Inventory";
+                    break;
+            }
+        }
 
 
         public void AddItem(Items target) 
@@ -81,22 +131,26 @@ namespace rpggame_A
                         case SpriteType.FireMagic:
                               item.Image = Image.FromFile(Shared.FireballItemInBox)  ;
                               item.Tag = "fireBox";
-                              focus = "fireBox";                        
+                              focus = "fireBox";
+                              SetStatus();
                             break;
                         case SpriteType.StoneMagic:
                               item.Image = Image.FromFile(Shared.StoneItemInBox);
                               item.Tag = "stoneBox";
                               focus = "stoneBox";
+                              SetStatus();
                             break;
                         case SpriteType.LifeMagic:
                               item.Image = Image.FromFile(Shared.LifeItemInBox);
                               item.Tag = "lifeBox";
                               focus = "lifeBox";
+                              SetStatus();
                             break;
                         case SpriteType.CharmMagic:
                               item.Image = Image.FromFile(Shared.CharmItemInBox);
                               item.Tag = "charmBox";
                               focus = "charmBox";
+                              SetStatus();
                             break;
                     }
                     break;
@@ -111,5 +165,13 @@ namespace rpggame_A
             this.GiveAttackSkill += item.GiveAttacSkill;
         }
 
+        public void UpdateExpirience(int deltaExperience) 
+        {
+            int currentValue = expirienceBar.Value;
+            if (currentValue + deltaExperience < expirienceBar.Maximum)
+            {
+                expirienceBar.Value += deltaExperience;
+            }
+        }
     }
 }

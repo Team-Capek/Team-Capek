@@ -92,7 +92,7 @@ namespace rpggame_A
             infoPanel.Font = new Font("Algerian", 11);
             infoPanel.Text = "INFO PANEL: ";
             infoPanel.AutoSize = false;
-            infoPanel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            infoPanel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             inventory = new Inventory(space.Width / 2 - 150, space.Height - 75, space);
             
             space.Controls.Add(infoPanel);
@@ -165,7 +165,8 @@ namespace rpggame_A
             UpdateInfoPanel();
             RemoveTimedoutMagics();
             MoveMovableMagic();
-            BossTakeDecision();          
+            BossTakeDecision();
+            inventory.UpdateExpirience(1);
             this.DrawerDevice.RedrawObject(this.hero);
             this.DrawerDevice.RedrawObject(this.boss);
   
@@ -287,7 +288,7 @@ namespace rpggame_A
             DrawerDevice.AddObject(stone);       
             warUnits.Add(stone);
             warUnits.Add(boss);
-            warUnits.Add(hero);
+            // warUnits.Add(hero);
             items.Add(fireItem);
             items.Add(lifeItem);
             items.Add(charmItem);
@@ -396,6 +397,15 @@ namespace rpggame_A
                 switch (item.SpriteType)
                 {
                     case SpriteType.Stone:
+
+                        if (IsInRange(item, boss))//<-----------
+                        {
+                            boss.Life -= item.TakeLife;
+                            var fireReaction =new Blood(item.X,item.Y,70,40); 
+                            DrawerDevice.AddObject(fireReaction);
+                            item.Y = -200;
+                        }
+
                         (item as Stoune).Move();
                         DrawerDevice.RedrawObject(item);
                         break;

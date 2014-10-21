@@ -52,3 +52,12 @@ D:\SOFTUNI\OOP\TeamWork\RPG_20.10.2014\rpggame_A\obj\Debug\rpggame_A.csprojResol
 D:\SOFTUNI\OOP\TeamWork\RPG_20.10.2014\rpggame_A\obj\Debug\rpggame_A.GameWindow.resources
 D:\SOFTUNI\OOP\TeamWork\RPG_20.10.2014\rpggame_A\obj\Debug\rpggame_A.Properties.Resources.resources
 D:\SOFTUNI\OOP\TeamWork\RPG_20.10.2014\rpggame_A\obj\Debug\rpggame_A.csproj.GenerateResource.Cache
+C:\Users\PO\Documents\GitHub\Team-Capek\RPG\rpggame_A\bin\Debug\rpggame_A.exe.config
+C:\Users\PO\Documents\GitHub\Team-Capek\RPG\rpggame_A\obj\Debug\rpggame_A.exe
+C:\Users\PO\Documents\GitHub\Team-Capek\RPG\rpggame_A\obj\Debug\rpggame_A.pdb
+C:\Users\PO\Documents\GitHub\Team-Capek\RPG\rpggame_A\bin\Debug\rpggame_A.exe
+C:\Users\PO\Documents\GitHub\Team-Capek\RPG\rpggame_A\bin\Debug\rpggame_A.pdb
+C:\Users\PO\Documents\GitHub\Team-Capek\RPG\rpggame_A\obj\Debug\rpggame_A.csprojResolveAssemblyReference.cache
+C:\Users\PO\Documents\GitHub\Team-Capek\RPG\rpggame_A\obj\Debug\rpggame_A.GameWindow.resources
+C:\Users\PO\Documents\GitHub\Team-Capek\RPG\rpggame_A\obj\Debug\rpggame_A.Properties.Resources.resources
+C:\Users\PO\Documents\GitHub\Team-Capek\RPG\rpggame_A\obj\Debug\rpggame_A.csproj.GenerateResource.Cache

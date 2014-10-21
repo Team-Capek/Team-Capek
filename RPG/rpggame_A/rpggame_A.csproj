@@ -44,6 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Blood.cs" />
+    <Compile Include="Decor.cs" />
     <Compile Include="Interfaces\AIControler.cs" />
     <Compile Include="Constructions\Brain.cs" />
     <Compile Include="Constructions\BrainControler.cs" />
