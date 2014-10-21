@@ -11,6 +11,7 @@ namespace Capek.RPGGame.UI
         private List<PictureBox> inventory;
         private SimpleProgressBar expirienceBar;
         private Label status;
+        private Label desc;
         public string focus;
         const int width = 50;
         const int height = 50;
@@ -63,15 +64,17 @@ namespace Capek.RPGGame.UI
                 expirienceBar.Left = this.x - expirienceBar.Width;
                 expirienceBar.Top = this.y;
                 expirienceBar.Maximum = 2000;
+                expirienceBar.BackColor = Color.DimGray;
                 canvas.Controls.Add(expirienceBar);
 
                 Label expLable = new Label();
-                expLable.Text = "Expirience";
-                expLable.Height = 10;
-                expLable.Width = 50;
-                expLable.Font = new Font("Algerian", 6);
+                expLable.Text = "Experience";
+                expLable.Height = 16;
+                expLable.Width = 60;
+                expLable.Font = new Font("Algerian", 7);
                 expLable.ForeColor = Color.White;
-                expLable.BackColor = Color.FromArgb(10,60,30) ;
+                expLable.BackColor = Color.DarkSlateGray;
+                //expLable.BackColor = Color.FromArgb(10,60,30) ;
                 expLable.Top = this.y+1;// -expLable.Height;
                 expLable.Left = expirienceBar.Left+1;           
                 canvas.Controls.Add(expLable);
@@ -81,11 +84,25 @@ namespace Capek.RPGGame.UI
                 status.Text = "Empty Inventory";
                 status.Top = this.y;
                 status.Left = picNumber * width + this.x;
-                status.Width = 2 * width;
-                status.Height = height;
-                status.Font = new Font("Algerian", 9);
-                status.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+                status.Width = 4 * width;
+                status.Height = height/3;
+                status.Font = new Font("Algerian", 7);
+                status.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+                status.BackColor = Color.DimGray;
+                status.ForeColor = Color.Maroon;
                 canvas.Controls.Add(status);
+                
+
+                desc = new Label();
+                desc.Text = "";
+                desc.Top = this.y + height /3;
+                desc.Left = picNumber * width + this.x;
+                desc.Width = 4 * width;
+                desc.Height = 2 * height / 3;
+                desc.Font = new Font("Algerian", 6);
+                desc.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+                desc.BackColor = Color.DimGray;
+                canvas.Controls.Add(desc);
           
         }
 
@@ -105,12 +122,25 @@ namespace Capek.RPGGame.UI
         {
             switch (focus)
             {
-                case "fireBox": status.Text = "Fire Ball"; break;
-                case "stoneBox": status.Text = "Magic Stone"; break;
-                case "lifeBox": status.Text = "Life potion"; break;
-                case "charmBox": status.Text = "Lucky Item"; break;
+                case "fireBox": 
+                    status.Text = "Fire Ball";
+                    desc.Text = "A gem that grants heart to the bearer.";
+                    break;
+                case "stoneBox": 
+                    status.Text = "Magic Stone";
+                    desc.Text ="A magic stone that gives the bearer sight beyond sight.";
+                    break;
+                case "lifeBox": 
+                    status.Text = "Life potion";
+                    desc.Text = "A magical salve that can quickly mend even the deepest of wounds.";
+                    break;
+                case "charmBox": 
+                    status.Text = "Lucky Item"; 
+                    desc.Text = "A mystical, carved stone";
+                    break;
 
-                default:status.Text = "Empty Inventory";
+                default:
+                    status.Text = "Empty Inventory";
                     break;
             }
         }
