@@ -262,7 +262,6 @@ namespace Capek.RPGGame.Engine
                 }
             }
         }
-       
 
         private void killBoss()
         {
@@ -275,8 +274,6 @@ namespace Capek.RPGGame.Engine
                     this.boss.Y = -200;
                     inventory.UpdateExpirience(200);
                     this.boss.IsLife = false;
-
-
                 }
             }
 
@@ -289,7 +286,6 @@ namespace Capek.RPGGame.Engine
                     this.bossOne.Y = -200;
                     inventory.UpdateExpirience(200);
                     this.bossOne.IsLife = false;
-
                 }
             }
             if (this.bossTwo.IsLife == true)
@@ -301,7 +297,6 @@ namespace Capek.RPGGame.Engine
                     this.bossTwo.Y = -200;
                     this.bossTwo.IsLife = false;
                     inventory.UpdateExpirience(200);
-
                 }
             }
         }
@@ -429,13 +424,16 @@ namespace Capek.RPGGame.Engine
                     DrawerDevice.RedrawObject(item);
                     inventory.AddItem(item);
                     hero.Life += inventory.GiveLifeSkill;
+                    if (hero.Life > hero.MaxLife)
+                    {
+                        hero.Life = hero.MaxLife;
+                    }
                     inventory.GiveLifeSkill = 0;
                     hero.Defence += inventory.GiveDefenceSkill;
                     inventory.GiveDefenceSkill = 0;
                     hero.TakeLIfe += inventory.GiveAttackSkill;
                     inventory.GiveAttackSkill = 0;
                 }
-
             }
 
         }

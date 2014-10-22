@@ -37,7 +37,7 @@
             this.BackColor = System.Drawing.Color.Olive;
             this.BackgroundImage = global::Capek.RPGGame.Properties.Resources.groundGrassSand2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1184, 812);
+            this.ClientSize = new System.Drawing.Size(1184, 650);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
