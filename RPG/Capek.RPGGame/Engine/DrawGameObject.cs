@@ -15,20 +15,20 @@ namespace Capek.RPGGame.Engine
     public class DrawGameObject : IDraw
     {
         [DllImport("gdi32.dll")]
-        private static extern IntPtr AddFontMemResourceEx(IntPtr pbfont,uint cbfont,
+        private static extern IntPtr AddFontMemResourceEx(IntPtr pbfont, uint cbfont,
             IntPtr pdv, [In] ref uint pcFonts);
 
         private FontFamily fontFamily;
         private Font customFont;
 
-        private void LoadFont() 
+        private void LoadFont()
         {
             byte[] fontArray = Resources.GoticaBastard;
-            int dataLength=Resources.GoticaBastard.Length;
+            int dataLength = Resources.GoticaBastard.Length;
             IntPtr ptr = Marshal.AllocCoTaskMem(dataLength);
             Marshal.Copy(fontArray, 0, ptr, dataLength);
-            uint cFont=0;
-            AddFontMemResourceEx  (ptr, (uint)fontArray.Length, IntPtr.Zero, ref cFont);
+            uint cFont = 0;
+            AddFontMemResourceEx(ptr, (uint)fontArray.Length, IntPtr.Zero, ref cFont);
             PrivateFontCollection privateFont = new PrivateFontCollection();
             privateFont.AddMemoryFont(ptr, dataLength);
             Marshal.FreeCoTaskMem(ptr);
@@ -38,13 +38,13 @@ namespace Capek.RPGGame.Engine
 
         }
 
-        private void AllocateFont(Font f, Control c, float size ) 
+        private void AllocateFont(Font f, Control c, float size)
         {
-            FontStyle fs=  FontStyle.Regular;
-            c.Font= new Font(fontFamily,size,fs);
+            FontStyle fs = FontStyle.Regular;
+            c.Font = new Font(fontFamily, size, fs);
         }
 
-     
+
 
         private const int ProgressBarSizeX = 60;
         private const int ProgressBarSizeY = 8;
@@ -52,24 +52,24 @@ namespace Capek.RPGGame.Engine
         private const int ProgressBarOffsetY = -15;
 
         private Color fontColor;
-        private Form Canvas;   
+        private Form Canvas;
         private List<Label> characterNames;
         private List<PictureBox> pictureBoxes;
         private List<SimpleProgressBar> progressBars;
         private Image mageImage, mageImageL, mageImageR, mageImageD, mageImageU,
             ghoulImage, ghoulImageL, ghoulImageR, ghoulImageU, ghoulImageD,
             fireItem, stoneItem, lifeItem, charmItem, stoneOnThrow,
-            healthPotionImage, treeImage, wallImage, fireImage, spitImage, bloodImage ;
-      
+            healthPotionImage, treeImage, wallImage, fireImage, spitImage, bloodImage, skeleton1, skeleton2, skeleton3, skeleton4;
+
         public DrawGameObject(Form form)
         {
             this.Canvas = form;
             this.LoadResources();
             this.pictureBoxes = new List<PictureBox>();
             this.progressBars = new List<SimpleProgressBar>();
-            this.characterNames=new List<Label>();
+            this.characterNames = new List<Label>();
             LoadFont();
-            fontColor = Color.FromArgb(105,0,0);
+            fontColor = Color.FromArgb(105, 0, 0);
         }
 
         public void AddObject(IRenderable renderableObject)
@@ -82,11 +82,11 @@ namespace Capek.RPGGame.Engine
             }
         }
 
-      
+
 
         public void RemoveObject(IRenderable renderableObject)
         {
-           var picBox = GetPictureBoxByObject(renderableObject);
+            var picBox = GetPictureBoxByObject(renderableObject);
             this.Canvas.Controls.Remove(picBox);
             this.pictureBoxes.Remove(picBox);
 
@@ -107,11 +107,11 @@ namespace Capek.RPGGame.Engine
 
         public void RedrawObject(IRenderable objectToBeRedrawn)
         {
-          
-         
+
+
             var newCoordinates = new Point((int)objectToBeRedrawn.X, (int)objectToBeRedrawn.Y);
             var picBox = GetPictureBoxByObject(objectToBeRedrawn);
-            Image im=picBox.Image;
+            Image im = picBox.Image;
             picBox.Image = null;
             if (objectToBeRedrawn is WarUnit)
             {
@@ -122,17 +122,17 @@ namespace Capek.RPGGame.Engine
                 picBox.Image = GetSpriteImage(objectToBeRedrawn);
             }
             picBox.Location = newCoordinates;
-          
 
-            if (objectToBeRedrawn is ISkill && objectToBeRedrawn.SpriteType!=SpriteType.Wall)
+
+            if (objectToBeRedrawn is ISkill && objectToBeRedrawn.SpriteType != SpriteType.Wall)
             {
                 var unit = objectToBeRedrawn as ISkill;
                 var progressBar = GetProgressBarByObject(unit);
-                var name = getNameByOnject(unit) ;
-           
+                var name = getNameByOnject(unit);
+
                 this.SetProgressBarLocation(unit, progressBar);
-                this.SetNameLocation(unit,name);
-                if ( unit.Life > unit.MaxLife)
+                this.SetNameLocation(unit, name);
+                if (unit.Life > unit.MaxLife)
                 {
                     progressBar.Value = unit.MaxLife;
                 }
@@ -156,7 +156,7 @@ namespace Capek.RPGGame.Engine
             Name.ForeColor = fontColor;
             Name.Width = 110;
             this.SetNameLocation(unit, Name);
-            Name.Tag = unit;          
+            Name.Tag = unit;
             Name.Font = customFont;
             Name.BackColor = Color.Transparent;
             this.characterNames.Add(Name);
@@ -167,7 +167,7 @@ namespace Capek.RPGGame.Engine
         {
             var progressBar = new SimpleProgressBar();
             progressBar.Size = new Size(ProgressBarSizeX, ProgressBarSizeY);
-            progressBar.ForeColor = fontColor; 
+            progressBar.ForeColor = fontColor;
             this.SetProgressBarLocation(unit, progressBar);
             progressBar.Maximum = unit.MaxLife;
             progressBar.Value = unit.Life;
@@ -185,7 +185,7 @@ namespace Capek.RPGGame.Engine
             picBox.SizeMode = PictureBoxSizeMode.StretchImage;
             picBox.Parent = this.Canvas;
             picBox.Location = new Point((int)renderableObject.X, (int)renderableObject.Y);
-            picBox.Size = new Size((int)renderableObject.Width,(int) renderableObject.Height);
+            picBox.Size = new Size((int)renderableObject.Width, (int)renderableObject.Height);
             picBox.Tag = renderableObject;
             this.pictureBoxes.Add(picBox);
             this.Canvas.Controls.Add(picBox);
@@ -195,27 +195,27 @@ namespace Capek.RPGGame.Engine
 
         private void SetProgressBarLocation(ISkill unit, ProgressBar progressBar)
         {
-            progressBar.Location = new Point((int)(unit.X + ProgressBarOffsetX),(int)( unit.Y + ProgressBarOffsetY));
-            
+            progressBar.Location = new Point((int)(unit.X + ProgressBarOffsetX), (int)(unit.Y + ProgressBarOffsetY));
+
         }
 
-        private void SetNameLocation(ISkill unit, Label Name) 
+        private void SetNameLocation(ISkill unit, Label Name)
         {
             Name.Location = new Point((int)(unit.X + ProgressBarOffsetX), (int)(unit.Y + ProgressBarOffsetY - 20));
         }
 
 
-        private Image GetImageByDirection(IRenderable renderableObject) 
+        private Image GetImageByDirection(IRenderable renderableObject)
         {
             Image image;
-            
+
             WarUnit u = (WarUnit)renderableObject;
-           
+
             switch (renderableObject.SpriteType)
             {
                 case SpriteType.Mage:
 
-                    if (u.Direction .X==1 && u.Direction.Y==0)
+                    if (u.Direction.X == 1 && u.Direction.Y == 0)
                     {
                         image = this.mageImageR;
                     }
@@ -231,7 +231,7 @@ namespace Capek.RPGGame.Engine
                     {
                         image = this.mageImageD;
                     }
-                    else 
+                    else
                     {
                         image = this.mageImage;
                     }
@@ -276,7 +276,7 @@ namespace Capek.RPGGame.Engine
                     break;
                 case SpriteType.Stone:
                     image = this.stoneOnThrow;
-                    break;                   
+                    break;
                 case SpriteType.Spit:
                     image = this.spitImage;
                     break;
@@ -323,6 +323,19 @@ namespace Capek.RPGGame.Engine
                 case SpriteType.Blood:
                     image = this.bloodImage;
                     break;
+                case SpriteType.Skeleton1:
+                    image = this.skeleton1;
+                    break;
+                case SpriteType.Skeleton2:
+                    image = this.skeleton2;
+                    break;
+                case SpriteType.Skeleton3:
+                    image = this.skeleton3;
+                    break;
+                case SpriteType.Skeleton4:
+                    image = this.skeleton4;
+                    break;
+                    
                 default:
                     image = this.wallImage;
                     break;
@@ -330,7 +343,7 @@ namespace Capek.RPGGame.Engine
             return image;
         }
 
-       
+
 
         private SimpleProgressBar GetProgressBarByObject(ISkill unit)
         {
@@ -354,7 +367,7 @@ namespace Capek.RPGGame.Engine
             this.healthPotionImage = Image.FromFile(Shared.HealthPotionImagePath);
             this.treeImage = Image.FromFile(Shared.TreeImagePath);
             this.wallImage = Image.FromFile(Shared.WallImagePath);
-            this.fireImage = Image.FromFile(Shared.FireImagePath);         
+            this.fireImage = Image.FromFile(Shared.FireImagePath);
             this.spitImage = Image.FromFile(Shared.SpitImagePath);
             this.ghoulImage = Image.FromFile(Shared.GhoulImagePath);
             this.ghoulImageL = Image.FromFile(Shared.GhoulImagePathL);
@@ -362,14 +375,18 @@ namespace Capek.RPGGame.Engine
             this.ghoulImageU = Image.FromFile(Shared.GhoulImagePathU);
             this.ghoulImageD = Image.FromFile(Shared.GhoulImagePathD);
             this.fireItem = Image.FromFile(Shared.FireballItem);
-            this.stoneItem= Image.FromFile(Shared.StoneItem);
-            this.stoneOnThrow=Image.FromFile(Shared.StoneItemOnThrow);
+            this.stoneItem = Image.FromFile(Shared.StoneItem);
+            this.stoneOnThrow = Image.FromFile(Shared.StoneItemOnThrow);
             this.charmItem = Image.FromFile(Shared.CharmItem);
             this.lifeItem = Image.FromFile(Shared.LifeItem);
-            this.bloodImage=Image.FromFile(Shared.BloodDecorImagePath);
+            this.bloodImage = Image.FromFile(Shared.BloodDecorImagePath);
+            this.skeleton1 = Image.FromFile(Shared.Skleton1);
+            this.skeleton2 = Image.FromFile(Shared.Skleton2);
+            this.skeleton3 = Image.FromFile(Shared.Skleton3);
+            this.skeleton4 = Image.FromFile(Shared.Skleton4);
 
         }
     }
 
-   
+
 }

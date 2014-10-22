@@ -52,5 +52,11 @@ namespace Capek.RPGGame.Utility
         public const string CharmItemInBox = "../../Resources/charmMagicInBox.png";
 
         public const string SpitImagePath = "../../Resources/spit.png";
+        public const string Skleton1 = "../../Resources/Skeleton_1.png";
+        public const string Skleton2 = "../../Resources/Skeleton_2.png";
+        public const string Skleton3 = "../../Resources/Skeleton_3.png";
+        public const string Skleton4 = "../../Resources/Skeleton_4.png";
+       
+
     }
 }

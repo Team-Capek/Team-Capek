@@ -5,6 +5,7 @@ namespace Capek.RPGGame.Constructions
     public abstract class WarUnit : GameObject, ISkill, IMovable, IRenderable, IMagicable
     {
         private int life;
+        private bool isLife;
 
         public WarUnit(double x, double y, double width, double height,
             int life, int giveLife, int takeLife, int defence, int expirience,
@@ -21,6 +22,13 @@ namespace Capek.RPGGame.Constructions
             this.SpriteType = spriteType;
             this.Name = name;
             this.MaxLife = maxLife;
+            this.isLife = true;
+        }
+
+        public bool IsLife
+        {
+            get { return isLife; }
+            set { isLife = value; }
         }
 
 

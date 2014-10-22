@@ -15,7 +15,11 @@
         LifeMagic,
         CharmMagic,
         Stone,
-        Blood
+        Blood,
+        Skeleton1,
+        Skeleton2,
+        Skeleton3,
+        Skeleton4,
     
     }
 }

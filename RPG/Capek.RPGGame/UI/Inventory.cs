@@ -8,7 +8,7 @@ namespace Capek.RPGGame.UI
 {
     public class Inventory
     {
-        private List<PictureBox> inventory;
+        public List<PictureBox> inventory;
         private SimpleProgressBar expirienceBar;
         private Label status;
         private Label desc;
@@ -193,10 +193,13 @@ namespace Capek.RPGGame.UI
 
         public void UpdateExpirience(int deltaExperience) 
         {
-            int currentValue = expirienceBar.Value;
-            if (currentValue + deltaExperience < expirienceBar.Maximum)
+            if (deltaExperience != 0)
             {
-                expirienceBar.Value += deltaExperience;
+                int currentValue = expirienceBar.Value;
+                if (currentValue + deltaExperience < expirienceBar.Maximum)
+                {
+                    expirienceBar.Value += deltaExperience;
+                }
             }
         }
     }

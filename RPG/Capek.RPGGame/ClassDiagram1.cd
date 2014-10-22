@@ -3,7 +3,7 @@
   <Class Name="Capek.RPGGame.Engine.Engine" Collapsed="true">
     <Position X="2.25" Y="25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AgQBIAAAA0QhGIKAAAgAAEAAAAAUAAACcAABkgQABBo=</HashCode>
+      <HashCode>AgQBIAAAA0QhGMKAAAgAAEAAAAAUAAACcAABkgQABBo=</HashCode>
       <FileName>Engine\Engine.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -54,7 +54,7 @@
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAEABAAAAIAAAAAAACAAAAABCAAAAAAAAAAAAkABDEA=</HashCode>
+      <HashCode>AAEABAAIAIAACAAAACAAAAABCAAAAAAAAAAAAkABDEA=</HashCode>
       <FileName>Constructions\WarUnit.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -109,7 +109,7 @@
   <Class Name="Capek.RPGGame.Utility.Shared" Collapsed="true">
     <Position X="2.25" Y="23" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>CCUQAAIAAQIMAyKAIAAGCAAAAIAAgAiAAAQCAAgIAAI=</HashCode>
+      <HashCode>CCVQAAIAAQIMAyKAIAAGCCAAAIAAgBiAAAQCAAgIAAI=</HashCode>
       <FileName>Utility\Shared.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -193,28 +193,28 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Capek.RPGGame.Items.FireBallMagic" Collapsed="true">
-    <Position X="7" Y="13.25" Width="1.5" />
+    <Position X="8.5" Y="13.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Items\FireBallMagic.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Capek.RPGGame.Items.LifeMagic" Collapsed="true">
-    <Position X="8.75" Y="13.25" Width="1.5" />
+    <Position X="11" Y="13.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Items\LifeMagic.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Capek.RPGGame.Items.StoneMagic" Collapsed="true">
-    <Position X="10.75" Y="13.25" Width="1.5" />
+    <Position X="12.75" Y="13.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Items\StoneMagic.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Capek.RPGGame.Items.CharmMagic" Collapsed="true">
-    <Position X="9.75" Y="14.25" Width="1.5" />
+    <Position X="9.5" Y="15" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Items\CharmMagic.cs</FileName>
@@ -253,6 +253,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Items\FireBall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Capek.RPGGame.Skeleton">
+    <Position X="7" Y="13" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Skeleton.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="Capek.RPGGame.Interfaces.IControlerable">
@@ -314,7 +321,7 @@
   <Enum Name="Capek.RPGGame.Constructions.SpriteType">
     <Position X="9.25" Y="22" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAgAAAACQAAACAAAAAAAAAAAEAIQQEAgAAAICCAA=</HashCode>
+      <HashCode>AEAAAgAAAACQAAACAAAAAAAAAAAEAIQQEAgAAAICCAA=</HashCode>
       <FileName>Constructions\SpriteType.cs</FileName>
     </TypeIdentifier>
   </Enum>

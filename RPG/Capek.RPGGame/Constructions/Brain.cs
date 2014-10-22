@@ -18,9 +18,9 @@ namespace Capek.RPGGame.Constructions
        
 
         private Random RandomDecision;
-        
 
-        public Brain() 
+
+        public Brain()
         {
             RandomDecision = new Random();
         }

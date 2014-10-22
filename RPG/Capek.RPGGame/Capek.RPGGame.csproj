@@ -56,7 +56,8 @@
     <Compile Include="Items\FireBallMagic.cs" />
     <Compile Include="Interfaces\MagicType.cs" />
     <Compile Include="Monster.cs" />
-    <Compile Include="UI\InventoryController.cs" />
+    <Compile Include="Skeleton.cs" />
+    <Compile Include="UI\IventoryKeyboard.cs" />
     <Compile Include="Items\StoneMagic.cs" />
     <Compile Include="Engine\GameWindow.cs">
       <SubType>Form</SubType>
@@ -119,7 +120,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\CloisterBlack.ttf" />
     <None Include="Resources\ghoul1.png" />
