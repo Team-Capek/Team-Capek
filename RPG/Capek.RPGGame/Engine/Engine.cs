@@ -19,6 +19,7 @@ namespace Capek.RPGGame.Engine
         private Label infoPanel;
         private GameWindow space;
         private int time;
+        private int healPerSec;
         private IControlerable controler;
         private IDraw DrawerDevice;
         private WarUnit hero;
@@ -227,6 +228,23 @@ namespace Capek.RPGGame.Engine
             expririenceEnd();
         }
 
+        private void LivingCreaturesLifeRegen(WarUnit unit)
+        {
+            if (unit.Life < unit.MaxLife)
+            {
+                healPerSec++;
+                if (healPerSec == 10)
+                {
+                    unit.Life += 1;
+                    healPerSec = 0;
+                }
+            }
+            else
+            {
+                healPerSec = 0;
+            }
+        }
+
         private void IsHeroLifeZero()
         {
             if (this.hero.IsLife == true)
@@ -238,8 +256,13 @@ namespace Capek.RPGGame.Engine
                     this.hero.IsLife = false;
                     this.hero.Y = -200;
                 }
+                else
+                {
+                    LivingCreaturesLifeRegen(this.hero);
+                }
             }
         }
+       
 
         private void killBoss()
         {
