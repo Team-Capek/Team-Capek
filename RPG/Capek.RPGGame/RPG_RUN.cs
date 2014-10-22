@@ -15,7 +15,7 @@ namespace Capek.RPGGame
         [STAThread]
         static void Main()
         {
-             Engine.Engine.Istanse.Run();
+             Engine.Engine.Instance.Run();
         }
     }
 }

@@ -34,10 +34,15 @@ namespace Capek.RPGGame.Engine
         private Interfaces.Items charmItem;
         private List<Interfaces.Items> items;
 
-        public static Engine Istanse
+        public static Engine Instance
         {
             get 
-            { 
+            {
+                if (engine == null)
+                {
+                    return engine;
+                }
+
                 return engine;
             }
         }
@@ -58,10 +63,8 @@ namespace Capek.RPGGame.Engine
             time = 0;
             
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            
-            InitialScene();
-          
+            Application.SetCompatibleTextRenderingDefault(false);           
+            InitialScene();        
             controler = new KeyBoard(space);
             DrawerDevice = new DrawGameObject(space);
             bossBrain = new Brain();
@@ -157,7 +160,7 @@ namespace Capek.RPGGame.Engine
             TestPoint(unit); 
         }
 
-//---------------------------------------------------------------------
+
         private void Update(object sender, EventArgs e)
         {
             time++;
@@ -171,7 +174,7 @@ namespace Capek.RPGGame.Engine
   
         }
 
-//---------------------------------------------------------
+
 
         private void BossTakeDecision() 
         {
@@ -287,7 +290,6 @@ namespace Capek.RPGGame.Engine
             DrawerDevice.AddObject(stone);       
             warUnits.Add(stone);
             warUnits.Add(boss);
-            // warUnits.Add(hero);
             items.Add(fireItem);
             items.Add(lifeItem);
             items.Add(charmItem);
@@ -295,13 +297,7 @@ namespace Capek.RPGGame.Engine
 
 
         }
-//---------------------------------ne se izpolzwa
-        public void PlayNextMove()
-        {
-            RemoveTimedoutMagics();
-               this.DrawerDevice.RedrawObject(this.hero);
-        }
-//---------------------------------------------------
+
         private void RemoveTimedoutMagics()
         {
             foreach (var mag in this.magics)
@@ -376,8 +372,7 @@ namespace Capek.RPGGame.Engine
                {
                    case Reaction.ReceiveDemage:
 
-                       int result = participant.Life- magic.TakeLife;//+magic.caster
-                       //if ....
+                       int result = participant.Life- magic.TakeLife;                      
                        participant.Life = result;
                        break;
                    case Reaction.ReceiveLife:

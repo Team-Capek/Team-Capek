@@ -47,7 +47,7 @@ namespace Capek.RPGGame.UI
                 pic.Width = width;
                 pic.Height = height;
                 pic.Tag = "Box";
-               inventory.Add(pic);
+                inventory.Add(pic);
                 canvas.Controls.Add(pic);
                 pic.Left = this.x + i* width;
                 pic.Top = this.y;
@@ -60,35 +60,34 @@ namespace Capek.RPGGame.UI
                 expirienceBar = new SimpleProgressBar();
                 expirienceBar.Height = height;
                 expirienceBar.Width = 200;
-                expirienceBar.ForeColor = Color.Blue;
+                expirienceBar.ForeColor = Color.FromArgb(90,50,10);
                 expirienceBar.Left = this.x - expirienceBar.Width;
                 expirienceBar.Top = this.y;
                 expirienceBar.Maximum = 2000;
-                expirienceBar.BackColor = Color.DimGray;
+                expirienceBar.BackColor = Color.Tan;
                 canvas.Controls.Add(expirienceBar);
 
                 Label expLable = new Label();
                 expLable.Text = "Experience";
-                expLable.Height = 16;
-                expLable.Width = 60;
+                expLable.Height = 12;
+                expLable.Width = 65;
                 expLable.Font = new Font("Algerian", 7);
                 expLable.ForeColor = Color.White;
-                expLable.BackColor = Color.DarkSlateGray;
-                //expLable.BackColor = Color.FromArgb(10,60,30) ;
+                expLable.BackColor = Color.FromArgb(70,60,30) ;
                 expLable.Top = this.y+1;// -expLable.Height;
                 expLable.Left = expirienceBar.Left+1;           
                 canvas.Controls.Add(expLable);
                 canvas.Controls.SetChildIndex(expLable, 0);
 
-                status=new Label();
+                status=new Label();               
                 status.Text = "Empty Inventory";
                 status.Top = this.y;
                 status.Left = picNumber * width + this.x;
                 status.Width = 4 * width;
                 status.Height = height/3;
                 status.Font = new Font("Algerian", 7);
-                status.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-                status.BackColor = Color.DimGray;
+                status.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+                status.BackColor = Color.Tan;
                 status.ForeColor = Color.Maroon;
                 canvas.Controls.Add(status);
                 
@@ -100,8 +99,8 @@ namespace Capek.RPGGame.UI
                 desc.Width = 4 * width;
                 desc.Height = 2 * height / 3;
                 desc.Font = new Font("Algerian", 6);
-                desc.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-                desc.BackColor = Color.DimGray;
+                desc.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+                desc.BackColor = Color.Tan;
                 canvas.Controls.Add(desc);
           
         }

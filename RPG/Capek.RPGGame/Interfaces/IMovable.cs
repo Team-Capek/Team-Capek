@@ -2,7 +2,7 @@
 
 namespace Capek.RPGGame.Interfaces
 {
-    public interface IMovable
+    public interface IMovable : IGameObject
     {
         Vector2 Direction { get; set; }
         double Speed { get; set; }
