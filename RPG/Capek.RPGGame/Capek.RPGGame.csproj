@@ -38,9 +38,9 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Animal.cs" />
-    <Compile Include="Human.cs" />
-    <Compile Include="Humanoid.cs" />
+    <Compile Include="Characters\Animal.cs" />
+    <Compile Include="Characters\Human.cs" />
+    <Compile Include="Characters\Humanoid.cs" />
     <Compile Include="Items\Blood.cs" />
     <Compile Include="Items\Decor.cs" />
     <Compile Include="Interfaces\AIControler.cs" />
@@ -55,7 +55,7 @@
     <Compile Include="Items\FireBall.cs" />
     <Compile Include="Items\FireBallMagic.cs" />
     <Compile Include="Interfaces\MagicType.cs" />
-    <Compile Include="Monster.cs" />
+    <Compile Include="Characters\Monster.cs" />
     <Compile Include="Skeleton.cs" />
     <Compile Include="UI\IventoryKeyboard.cs" />
     <Compile Include="Items\StoneMagic.cs" />

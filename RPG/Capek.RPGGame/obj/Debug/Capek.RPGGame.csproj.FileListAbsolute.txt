@@ -44,3 +44,12 @@ D:\Capek\trunk\RPG\Capek.RPGGame\obj\Debug\Capek.RPGGame.csprojResolveAssemblyRe
 D:\Capek\trunk\RPG\Capek.RPGGame\obj\Debug\Capek.RPGGame.Engine.GameWindow.resources
 D:\Capek\trunk\RPG\Capek.RPGGame\obj\Debug\Capek.RPGGame.Properties.Resources.resources
 D:\Capek\trunk\RPG\Capek.RPGGame\obj\Debug\Capek.RPGGame.csproj.GenerateResource.Cache
+C:\Users\protecta\Documents\GitHub\TEAM_CAPEC\Team-Capek\RPG\Capek.RPGGame\bin\Debug\Capek.RPGGame.exe.config
+C:\Users\protecta\Documents\GitHub\TEAM_CAPEC\Team-Capek\RPG\Capek.RPGGame\obj\Debug\Capek.RPGGame.exe
+C:\Users\protecta\Documents\GitHub\TEAM_CAPEC\Team-Capek\RPG\Capek.RPGGame\obj\Debug\Capek.RPGGame.pdb
+C:\Users\protecta\Documents\GitHub\TEAM_CAPEC\Team-Capek\RPG\Capek.RPGGame\bin\Debug\Capek.RPGGame.exe
+C:\Users\protecta\Documents\GitHub\TEAM_CAPEC\Team-Capek\RPG\Capek.RPGGame\bin\Debug\Capek.RPGGame.pdb
+C:\Users\protecta\Documents\GitHub\TEAM_CAPEC\Team-Capek\RPG\Capek.RPGGame\obj\Debug\Capek.RPGGame.csprojResolveAssemblyReference.cache
+C:\Users\protecta\Documents\GitHub\TEAM_CAPEC\Team-Capek\RPG\Capek.RPGGame\obj\Debug\Capek.RPGGame.Engine.GameWindow.resources
+C:\Users\protecta\Documents\GitHub\TEAM_CAPEC\Team-Capek\RPG\Capek.RPGGame\obj\Debug\Capek.RPGGame.Properties.Resources.resources
+C:\Users\protecta\Documents\GitHub\TEAM_CAPEC\Team-Capek\RPG\Capek.RPGGame\obj\Debug\Capek.RPGGame.csproj.GenerateResource.Cache
