@@ -4,7 +4,6 @@ namespace Capek.RPGGame.Constructions
 {
     public abstract class GameObject : IGameObject
     {
-
         public GameObject(double x, double y, double width, double height)
         {
             this.X = x;
@@ -12,8 +11,7 @@ namespace Capek.RPGGame.Constructions
             this.Width = width;
             this.Height = height;
         }
-
-
+        
         public double X
         {
             get;

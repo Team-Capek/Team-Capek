@@ -12,6 +12,5 @@ namespace Capek.RPGGame.Items
         {
             
         }
-
-    }
+        }
 }

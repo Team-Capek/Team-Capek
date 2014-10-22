@@ -23,21 +23,20 @@ namespace Capek.RPGGame.Interfaces
         {
             form.KeyDown += OnKeyDown;
             form.MouseClick += OnMouseKlick;
- 
         }
 
         private void OnMouseKlick(object sender, MouseEventArgs e)
         {
             if (this.ThrowMagic != null)
             {
-                var castArgs = new CastEventArgs(e.X,e.Y);
+                var castArgs = new CastEventArgs(e.X, e.Y);
                 this.ThrowMagic(this, castArgs);
             }
         }
 
         private void OnKeyDown(object sender, KeyEventArgs e)
         {
-            switch(e.KeyCode)
+            switch (e.KeyCode)
             {
                 case Keys.W:
                     if (MoveUp != null)
@@ -46,7 +45,7 @@ namespace Capek.RPGGame.Interfaces
                     }
                     break;
                 case Keys.D:
-                    if (MoveToLeft!=null)
+                    if (MoveToLeft != null)
                     {
                         this.MoveToLeft(this, new EventArgs());
                     }
@@ -63,14 +62,10 @@ namespace Capek.RPGGame.Interfaces
                         this.MoveDown(this, new EventArgs());
                     }
                     break;
-                    
+
                 default: break;
 
             }
         }
-
-
     }
-
-   
 }

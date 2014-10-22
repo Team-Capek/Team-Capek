@@ -56,7 +56,8 @@
     <Compile Include="Items\FireBallMagic.cs" />
     <Compile Include="Interfaces\MagicType.cs" />
     <Compile Include="Characters\Monster.cs" />
-    <Compile Include="Skeleton.cs" />
+    <Compile Include="Characters\Skeleton.cs" />
+    <Compile Include="Characters\MonsterDead.cs" />
     <Compile Include="UI\IventoryKeyboard.cs" />
     <Compile Include="Items\StoneMagic.cs" />
     <Compile Include="Engine\GameWindow.cs">

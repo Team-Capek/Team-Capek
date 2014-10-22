@@ -58,12 +58,10 @@ namespace Capek.RPGGame.Engine
         static Engine()
         {
             engine = new Engine();
-
         }
 
         private Engine()
         {
-
 
         }
 
@@ -87,7 +85,6 @@ namespace Capek.RPGGame.Engine
             this.QueryControler1(bossControlerOne, bossOne);
             this.QueryControler2(bossControlerTwo, bossTwo);
             Application.Run(space);
-
         }
 
         private void InitialScene()
@@ -137,7 +134,6 @@ namespace Capek.RPGGame.Engine
                 var magicArgs = args as CastEventArgs;
                 HeroThrowMgic(magicArgs.mx, magicArgs.my);
             };
-
         }
 
         private void QueryControler1(IControlerable controler, WarUnit unit)
@@ -163,7 +159,6 @@ namespace Capek.RPGGame.Engine
                 var magicArgs = args as CastEventArgs;
                 HeroThrowMgic(magicArgs.mx, magicArgs.my);
             };
-
         }
 
         private void QueryControler2(IControlerable controler, WarUnit unit)
@@ -248,25 +243,46 @@ namespace Capek.RPGGame.Engine
 
         private void killBoss()
         {
-            if (this.boss.Life == 0)
+            if (this.boss.IsLife == true)
             {
-                this.boss.Y = -200;
-                inventory.UpdateExpirience(20);
+                if (this.boss.Life == 0)
+                {
+                    var monsterdead = new MonsterDead(this.boss.X, this.boss.Y, this.boss.Width, this.boss.Height + 10);
+                    DrawerDevice.AddObject(monsterdead);
+                    this.boss.Y = -200;
+                    inventory.UpdateExpirience(200);
+                    this.boss.IsLife = false;
+
+
+                }
             }
 
-            if (this.bossOne.Life == 0)
+            if (this.bossOne.IsLife == true)
             {
-                inventory.UpdateExpirience(20);
-                this.bossOne.Y = -200;
-            }
+                if (this.bossOne.Life == 0)
+                {
+                    var monsterdead = new MonsterDead(this.bossOne.X, this.bossOne.Y, this.bossOne.Width, this.bossOne.Height + 10);
+                    DrawerDevice.AddObject(monsterdead);
+                    this.bossOne.Y = -200;
+                    inventory.UpdateExpirience(200);
+                    this.bossOne.IsLife = false;
 
-            if (this.bossTwo.Life == 0)
+                }
+            }
+            if (this.bossTwo.IsLife == true)
             {
-                this.bossTwo.Y = -200;
-                inventory.UpdateExpirience(20);
+                if (this.bossTwo.Life == 0)
+                {
+                    var monsterdead = new MonsterDead(this.bossTwo.X, this.bossTwo.Y, this.bossTwo.Width, this.bossTwo.Height + 10);
+                    DrawerDevice.AddObject(monsterdead);
+                    this.bossTwo.Y = -200;
+                    this.bossTwo.IsLife = false;
+                    inventory.UpdateExpirience(200);
+
+                }
             }
         }
-
+        
         private void expririenceEnd()
         {
             if (this.hero.Life == 0)
@@ -278,8 +294,6 @@ namespace Capek.RPGGame.Engine
                 inventory.UpdateExpirience(1);
             }
         }
-
-
 
         private void BossTakeDecision()
         {
@@ -299,7 +313,6 @@ namespace Capek.RPGGame.Engine
 
         private void TestPoint(WarUnit movableObject)
         {
-
             double tempX = movableObject.X;
             double tempY = movableObject.Y;
             double tempHeroX = hero.X;
@@ -351,9 +364,39 @@ namespace Capek.RPGGame.Engine
                 hero.Y = tempHeroY;
                 hero.Life = hero.Life - 30;
             }
+            if (IsInRange(bossOne, bossTwo))
+            {
+                bossOne.X = tempBoss2X;
+                bossOne.Y = tempBoss2Y;
+                bossTwo.X = tempBoss1X;
+                bossTwo.Y = tempBoss1Y;
+                
+            }
+            if (IsInRange(bossOne, bossTwo))
+            {
+                bossOne.X = tempBoss2X;
+                bossOne.Y = tempBoss2Y;
+                bossTwo.X = tempBoss1X;
+                bossTwo.Y = tempBoss1Y;
 
+            }
+            if (IsInRange(boss, bossOne))
+            {
+                boss.X = tempBoss1X;
+                boss.Y = tempBoss1Y;
+                bossTwo.X = tempBossX;
+                bossTwo.Y = tempBossY;
 
+            }
+            if (IsInRange(boss, bossTwo))
+            {
+                boss.X = tempBoss2X;
+                boss.Y = tempBoss2Y;
+                bossTwo.X = tempBossX;
+                bossTwo.Y = tempBossY;
 
+            }
+            
             foreach (Interfaces.Items item in items)
             {
                 if (IsInRange(hero, item))
@@ -376,52 +419,51 @@ namespace Capek.RPGGame.Engine
 
         private void UpdateInfoPanel()
         {
-            infoPanel.Text = String.Format("HERO INFO: Name:  {0}, LIFE:  {1}, DEFFENCE:  {2}, ATTAK:  {3}", hero.Name, hero.Life, hero.Defence, hero.TakeLIfe);
+            infoPanel.Text = String.Format("HERO INFO: Name:  {0}, LIFE:  {1}, DEFENCE:  {2}, ATTACK:  {3}", hero.Name, hero.Life, hero.Defence, hero.TakeLIfe);
         }
 
         private void InitialHero()
         {
-            hero = new Characters.Characters(100, 100, 110, 100, 100, 2, 5, 30, 10, 20,
+            this.hero = new Characters.Characters(100, 100, 110, 100, 100, 2, 5, 30, 10, 20,
                 new Vector2(0, 0), SpriteType.Mage, Shared.HeroHumanName, Shared.HeroHumanMaxLife);
 
-            boss = new Characters.Characters(150, 300, 110, 110, 200, 2, 5, 30, 10, 10,
+            this.boss = new Characters.Characters(150, 300, 110, 110, 200, 2, 5, 30, 10, 10,
                 new Vector2(0, 0), SpriteType.Ghoul, Shared.BossMonsterName, Shared.BossMonsterMaxLife);
 
-            bossOne = new Characters.Characters(450, 150, 110, 110, 200, 2, 5, 30, 10, 10,
+            this.bossOne = new Characters.Characters(450, 150, 110, 110, 200, 2, 5, 30, 10, 10,
                 new Vector2(0, 0), SpriteType.Ghoul, Shared.BossMonsterName, Shared.BossMonsterMaxLife);
 
-            bossTwo = new Characters.Characters(800, 300, 110, 110, 200, 2, 5, 30, 10, 10,
+            this.bossTwo = new Characters.Characters(800, 300, 110, 110, 200, 2, 5, 30, 10, 10,
                 new Vector2(0, 0), SpriteType.Ghoul, Shared.BossMonsterName, Shared.BossMonsterMaxLife);
 
-            stone = new Characters.Characters(350, 250, 310, 110, 200, 2, 5, 30, 10, 10,
+            this.stone = new Characters.Characters(350, 250, 310, 110, 200, 2, 5, 30, 10, 10,
                 new Vector2(0, 0), SpriteType.Wall, Shared.BossMonsterName, Shared.BossMonsterMaxLife);
 
-            fireItem = new FireBallMagic(500, 40, 30, 30, SpriteType.FireMagic, 1, 1, 5);
+            this.fireItem = new FireBallMagic(500, 40, 30, 30, SpriteType.FireMagic, 1, 1, 5);
 
-            stoneItem = new StoneMagic(890, 515, 30, 30, SpriteType.StoneMagic, 1, 2, 10);
+            this.stoneItem = new StoneMagic(890, 515, 30, 30, SpriteType.StoneMagic, 1, 2, 10);
 
-            lifeItem = new StoneMagic(50, 130, 30, 30, SpriteType.LifeMagic, 50, 2, 1);
+            this.lifeItem = new StoneMagic(50, 130, 30, 30, SpriteType.LifeMagic, 50, 2, 1);
 
-            charmItem = new StoneMagic(110, 400, 30, 30, SpriteType.CharmMagic, 5, 5, 5);
+            this.charmItem = new StoneMagic(110, 400, 30, 30, SpriteType.CharmMagic, 5, 5, 5);
 
-            DrawerDevice.AddObject(stoneItem);
-            DrawerDevice.AddObject(fireItem);
-            DrawerDevice.AddObject(lifeItem);
-            DrawerDevice.AddObject(charmItem);
-            DrawerDevice.AddObject(hero);
-            DrawerDevice.AddObject(boss);
-            DrawerDevice.AddObject(bossOne);
-            DrawerDevice.AddObject(bossTwo);
-            DrawerDevice.AddObject(stone);
-            warUnits.Add(stone);
-            warUnits.Add(boss);
-            warUnits.Add(bossOne);
-            warUnits.Add(bossTwo);
-            items.Add(fireItem);
-            items.Add(lifeItem);
-            items.Add(charmItem);
-            items.Add(stoneItem);
-
+            DrawerDevice.AddObject(this.stoneItem);
+            DrawerDevice.AddObject(this.fireItem);
+            DrawerDevice.AddObject(this.lifeItem);
+            DrawerDevice.AddObject(this.charmItem);
+            DrawerDevice.AddObject(this.hero);
+            DrawerDevice.AddObject(this.boss);
+            DrawerDevice.AddObject(this.bossOne);
+            DrawerDevice.AddObject(this.bossTwo);
+            DrawerDevice.AddObject(this.stone);
+            warUnits.Add(this.stone);
+            warUnits.Add(this.boss);
+            warUnits.Add(this.bossOne);
+            warUnits.Add(this.bossTwo);
+            items.Add(this.fireItem);
+            items.Add(this.lifeItem);
+            items.Add(this.charmItem);
+            items.Add(this.stoneItem);
 
         }
 
@@ -451,7 +493,6 @@ namespace Capek.RPGGame.Engine
 
             return (object1x1 < object2x2 && object1x2 > object2x1 &&
                 object1y1 < object2y2 && object1y2 > object2y1);
-
         }
 
         private void HeroThrowMgic(int mx, int my)

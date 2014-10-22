@@ -5,26 +5,17 @@ namespace Capek.RPGGame.Constructions
 {
     public class Brain : INotifyPropertyChanged
     {
-
-        // c.ThresholdReached += c_ThresholdReached;
-        
-
         private int decisionToMoveLeft;
         private int decisionToMoveRight;
         private int decisionToMoveUp;
         private int decisionToMoveDown;
-
         public event PropertyChangedEventHandler PropertyChanged;
-       
-
         private Random RandomDecision;
-
 
         public Brain()
         {
             RandomDecision = new Random();
         }
-
 
         protected virtual void OnPropertyChanged(string propertyName)
         {
@@ -35,13 +26,9 @@ namespace Capek.RPGGame.Constructions
             }
         }
 
-        
-
-
-
-        public void TakeDecision() 
+        public void TakeDecision()
         {
-            int probatilityDecision=RandomDecision.Next(0,25);
+            int probatilityDecision = RandomDecision.Next(0, 25);
 
             if (probatilityDecision >= 0 && probatilityDecision < 5)
             {
@@ -67,19 +54,11 @@ namespace Capek.RPGGame.Constructions
             {
                 //continue to do before
             }
-            
-            
-
         }
 
-        public  int DecisionToGoToTarget
+        public int DecisionToGoToTarget { get; set; }
 
-        {
-            get;
-            set;
-        }
-
-        public  int DecisionToMoveDown
+        public int DecisionToMoveDown
         {
             get { return decisionToMoveDown; }
             set
@@ -89,7 +68,7 @@ namespace Capek.RPGGame.Constructions
             }
         }
 
-        public  int DecisionToMoveLeft
+        public int DecisionToMoveLeft
         {
             get { return decisionToMoveLeft; }
             set
@@ -99,19 +78,17 @@ namespace Capek.RPGGame.Constructions
             }
         }
 
-        public  int DecisionToMoveRight
+        public int DecisionToMoveRight
         {
             get { return decisionToMoveRight; }
-            set 
+            set
             {
-                this.decisionToMoveRight= value;
-               OnPropertyChanged("DecisionToMoveRight");
+                this.decisionToMoveRight = value;
+                OnPropertyChanged("DecisionToMoveRight");
             }
         }
 
-       
-
-        public  int DecisionToMoveUp
+        public int DecisionToMoveUp
         {
             get { return decisionToMoveUp; }
             set
@@ -121,12 +98,7 @@ namespace Capek.RPGGame.Constructions
             }
         }
 
-        public  int DecisionToUseWeapon
-        {
-            get;
-            set;
-        }
+        public int DecisionToUseWeapon { get; set; }
 
-       
     }
 }

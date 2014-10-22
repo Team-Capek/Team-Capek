@@ -37,13 +37,13 @@
             this.BackColor = System.Drawing.Color.Olive;
             this.BackgroundImage = global::Capek.RPGGame.Properties.Resources.groundGrassSand2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(984, 612);
+            this.ClientSize = new System.Drawing.Size(1184, 812);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "GameWindow";
             this.ShowIcon = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "CAPEK LEND";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

@@ -6,6 +6,5 @@ namespace Capek.RPGGame.Constructions
         ReceiveDemage,
         ReceiveLife,
         Passive
-
     }
 }

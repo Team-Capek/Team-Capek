@@ -60,9 +60,7 @@ namespace Capek.RPGGame.Constructions
                 }
             }
         }
-
         
-
         public int Defence
         {
              get;

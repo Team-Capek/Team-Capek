@@ -3,33 +3,25 @@ using Capek.RPGGame.Interfaces;
 
 namespace Capek.RPGGame.Constructions
 {
-    public  class BrainControler : IControlerable
+    public class BrainControler : IControlerable
     {
 
         public event EventHandler MoveToRight;
-
         public event EventHandler MoveToLeft;
-
         public event EventHandler MoveUp;
-
         public event EventHandler MoveDown;
-
         public event EventHandler React;
-
         public event EventHandler ThrowMagic;
 
         public BrainControler(Brain brain)
         {
-           
             brain.PropertyChanged += DecisionChanged;
- 
         }
 
         private void DecisionChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
             switch (e.PropertyName)
             {
-
                 case "DecisionToMoveUp":
                     if (MoveUp != null)
                     {
@@ -59,13 +51,5 @@ namespace Capek.RPGGame.Constructions
             }
 
         }
-
-       
-
-
-       
-
-
-
     }
 }

@@ -14,8 +14,7 @@ namespace Capek.RPGGame.Characters
         {
           
         }
-
-       
+        
         public override Magic ThrowMagic(double x, double y, MagicType types)
         {
             switch (types)

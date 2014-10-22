@@ -6,46 +6,42 @@ namespace Capek.RPGGame.Constructions
     {
 
         private int currentTimeout;
-        
+
 
         public Magic(double x, double y, double width, double height, WarUnit thrower, int range,
-            int takeLife, int timeOut,   SpriteType spriteType, Magics magicType
-            ) :base( x,  y,  width,  height)
+            int takeLife, int timeOut, SpriteType spriteType, Magics magicType
+            )
+            : base(x, y, width, height)
         {
             this.MagicThrower = thrower;
             this.Range = range;
             this.CurrentTimeout = 0;
-            this.TimeOut = timeOut;          
-            this.HasTimeout =false;
+            this.TimeOut = timeOut;
+            this.HasTimeout = false;
             this.SpriteType = spriteType;
-
-           
-
-            this.X -= this.Width / 2 -20;
-            this.Y -= this.Height / 2 -20;
+            this.X -= this.Width / 2 - 20;
+            this.Y -= this.Height / 2 - 20;
             this.MagicType = magicType;
             this.TakeLife = takeLife;
-
         }
 
+        public Magics MagicType { get; set; }
 
-        public Magics MagicType {get;set;}
-
-        public WarUnit MagicThrower 
+        public WarUnit MagicThrower
         {
-            get; 
-            set; 
-        }
-
-        public double Range 
-        { 
-            get; 
+            get;
             set;
         }
 
-        public int TakeLife 
+        public double Range
         {
-            get; 
+            get;
+            set;
+        }
+
+        public int TakeLife
+        {
+            get;
             set;
         }
 
@@ -55,15 +51,15 @@ namespace Capek.RPGGame.Constructions
             set;
         }
 
-       public int CurrentTimeout
+        public int CurrentTimeout
         {
-            get 
+            get
             {
                 return this.currentTimeout;
             }
-            set 
+            set
             {
-                if (value >= this.TimeOut) 
+                if (value >= this.TimeOut)
                 {
                     this.HasTimeout = true;
                 }

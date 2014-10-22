@@ -13,8 +13,7 @@ namespace Capek.RPGGame
         public const int AttackSkill = 10;
         public const int MagicSkill = 20;
         public const string Description = "Humanoid Race Kind";
-
-
+        
         public Humanoid(double x, double y, double width, double height,
             int life, int giveLife, int takeLife, int defence, int expirience,
             double speed, Vector2 direction, SpriteType spriteType, string name, int maxLife)

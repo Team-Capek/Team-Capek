@@ -59,7 +59,7 @@ namespace Capek.RPGGame.Engine
         private Image mageImage, mageImageL, mageImageR, mageImageD, mageImageU,
             ghoulImage, ghoulImageL, ghoulImageR, ghoulImageU, ghoulImageD,
             fireItem, stoneItem, lifeItem, charmItem, stoneOnThrow,
-            healthPotionImage, treeImage, wallImage, fireImage, spitImage, bloodImage, skeleton1, skeleton2, skeleton3, skeleton4;
+            healthPotionImage, treeImage, wallImage, fireImage, spitImage, bloodImage, skeleton1, skeleton2, skeleton3, skeleton4, MonsterDead;
 
         public DrawGameObject(Form form)
         {
@@ -107,8 +107,6 @@ namespace Capek.RPGGame.Engine
 
         public void RedrawObject(IRenderable objectToBeRedrawn)
         {
-
-
             var newCoordinates = new Point((int)objectToBeRedrawn.X, (int)objectToBeRedrawn.Y);
             var picBox = GetPictureBoxByObject(objectToBeRedrawn);
             Image im = picBox.Image;
@@ -144,10 +142,8 @@ namespace Capek.RPGGame.Engine
                 {
                     progressBar.Value = unit.Life;
                 }
-
             }
         }
-
 
         private void CreateLablelName(ISkill unit)
         {
@@ -190,8 +186,6 @@ namespace Capek.RPGGame.Engine
             this.pictureBoxes.Add(picBox);
             this.Canvas.Controls.Add(picBox);
         }
-
-
 
         private void SetProgressBarLocation(ISkill unit, ProgressBar progressBar)
         {
@@ -335,7 +329,10 @@ namespace Capek.RPGGame.Engine
                 case SpriteType.Skeleton4:
                     image = this.skeleton4;
                     break;
-                    
+                case SpriteType.MonsterDead:
+                    image = this.MonsterDead;
+                    break;
+
                 default:
                     image = this.wallImage;
                     break;
@@ -384,9 +381,8 @@ namespace Capek.RPGGame.Engine
             this.skeleton2 = Image.FromFile(Shared.Skleton2);
             this.skeleton3 = Image.FromFile(Shared.Skleton3);
             this.skeleton4 = Image.FromFile(Shared.Skleton4);
+            this.MonsterDead = Image.FromFile(Shared.MonsterDead);
 
         }
     }
-
-
 }

@@ -6,30 +6,22 @@ using System.Threading.Tasks;
 
 namespace Capek.RPGGame.Utility
 {
-  public static class Shared
+    public static class Shared
     {
-        public  const string HeroHumanName = "HUGOR";
-        public const int HeroHumanMaxLife=100;
-
+        public const string HeroHumanName = "HUGOR";
+        public const int HeroHumanMaxLife = 100;
         public const string BossMonsterName = "DARK ARKADASH";
         public const int BossMonsterMaxLife = 200;
-
         public const int TimedoutFireBallMax = 100;
         public const int TimerIterval = 100;
-
         public const int FireBallMagicRange = 100;
-
-        public const string BloodDecorImagePath= "../../Resources/blood.png";
-
+        public const string BloodDecorImagePath = "../../Resources/blood.png";
         public const string InventoryBoxPath = "../../Resources/inventoryBox.png";
-
         public const string MageImagePath = "../../Resources/mage.png";
         public const string MageImagePathL = "../../Resources/mageL.png";
         public const string MageImagePathR = "../../Resources/mageR.png";
         public const string MageImagePathD = "../../Resources/mageD.png";
         public const string MageImagePathU = "../../Resources/mageU.png";
-      
-
         public const string HealthPotionImagePath = "../../Resources/health-potion.png";
         public const string TreeImagePath = "../../Resources/tree.png";
         public const string WallImagePath = "../../Resources/HeadWallGradShad_V2.png";
@@ -39,24 +31,21 @@ namespace Capek.RPGGame.Utility
         public const string GhoulImagePathR = "../../Resources/MonstR.png";
         public const string GhoulImagePathD = "../../Resources/MonstD.png";
         public const string GhoulImagePathU = "../../Resources/MonstU.png";
-
         public const string FireballItem = "../../Resources/fireBallMagic.png";
         public const string FireballItemInBox = "../../Resources/fireBallMagicInBox.png";
         public const string StoneItem = "../../Resources/stoneMagic.png";
         public const string StoneItemInBox = "../../Resources/stoneMagicInBox.png";
         public const string StoneItemOnThrow = "../../Resources/stone.png";
-
         public const string LifeItem = "../../Resources/lifeMagic.png";
         public const string LifeItemInBox = "../../Resources/lifeMagicInBox.png";
         public const string CharmItem = "../../Resources/charmMagic.png";
         public const string CharmItemInBox = "../../Resources/charmMagicInBox.png";
-
         public const string SpitImagePath = "../../Resources/spit.png";
         public const string Skleton1 = "../../Resources/Skeleton_1.png";
         public const string Skleton2 = "../../Resources/Skeleton_2.png";
         public const string Skleton3 = "../../Resources/Skeleton_3.png";
         public const string Skleton4 = "../../Resources/Skeleton_4.png";
-       
-
+        public const string MonsterDead = "../../Resources/MonstDead.png";
+        
     }
 }

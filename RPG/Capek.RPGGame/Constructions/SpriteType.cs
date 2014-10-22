@@ -2,7 +2,6 @@
 {
     public enum SpriteType
     {
-       
         Mage,
         Tree,
         Wall,
@@ -20,6 +19,7 @@
         Skeleton2,
         Skeleton3,
         Skeleton4,
-    
+        MonsterDead,
+
     }
 }

@@ -8,14 +8,10 @@ namespace Capek.RPGGame
 {
     static class RPG_RUN
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        /// 
         [STAThread]
         static void Main()
         {
-             Engine.Engine.Instance.Run();
+            Engine.Engine.Instance.Run();
         }
     }
 }

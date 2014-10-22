@@ -5,20 +5,18 @@ namespace Capek.RPGGame.Constructions
     public class Vector2
     {
 
-        public  Vector2(double x,double y)
+        public Vector2(double x, double y)
         {
-           this.X = x ;
-           this.Y = y;
+            this.X = x;
+            this.Y = y;
         }
+        public double Y { get; set; }
+        public double X { get; set; }
 
-
-        public   double Y { get; set; }
-        public   double X { get; set; }
-
-        public Vector2 Normalize() 
+        public Vector2 Normalize()
         {
             double modul = Math.Sqrt(this.X * this.X + this.Y * this.Y);
-            return new Vector2(this.X/modul,this.Y/modul);
+            return new Vector2(this.X / modul, this.Y / modul);
         }
     }
 }
