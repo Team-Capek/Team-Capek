@@ -224,8 +224,21 @@ namespace Capek.RPGGame.Engine
             this.DrawerDevice.RedrawObject(this.bossOne);
             this.DrawerDevice.RedrawObject(this.bossTwo);
             killBoss();
+            LivingCreaturesLifeRegen();
             IsHeroLifeZero();
             expririenceEnd();
+        }
+
+        private void LivingCreaturesLifeRegen()
+        {
+            foreach (WarUnit unit in warUnits)
+            {
+                if (unit.Life < unit.MaxLife && time % 10 == 0)
+                {
+                        unit.Life += 1;
+                        healPerSec = 0;
+                }
+            }     
         }
 
         private void LivingCreaturesLifeRegen(WarUnit unit)
