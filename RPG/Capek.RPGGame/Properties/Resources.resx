@@ -148,9 +148,7 @@
   <data name="HeadWall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HeadWall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ghoul" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ghoul1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+ 
   <data name="groundGrassSand2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\groundGrassSand2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

@@ -360,12 +360,10 @@ namespace Capek.RPGGame.Engine
             this.mageImageL = Image.FromFile(Shared.MageImagePathL);
             this.mageImageR = Image.FromFile(Shared.MageImagePathR);
             this.mageImageD = Image.FromFile(Shared.MageImagePathD);
-            this.mageImageU = Image.FromFile(Shared.MageImagePathU);
-            this.healthPotionImage = Image.FromFile(Shared.HealthPotionImagePath);
+            this.mageImageU = Image.FromFile(Shared.MageImagePathU);       
             this.treeImage = Image.FromFile(Shared.TreeImagePath);
             this.wallImage = Image.FromFile(Shared.WallImagePath);
-            this.fireImage = Image.FromFile(Shared.FireImagePath);
-            this.spitImage = Image.FromFile(Shared.SpitImagePath);
+            this.fireImage = Image.FromFile(Shared.FireImagePath);          
             this.ghoulImage = Image.FromFile(Shared.GhoulImagePath);
             this.ghoulImageL = Image.FromFile(Shared.GhoulImagePathL);
             this.ghoulImageR = Image.FromFile(Shared.GhoulImagePathR);
