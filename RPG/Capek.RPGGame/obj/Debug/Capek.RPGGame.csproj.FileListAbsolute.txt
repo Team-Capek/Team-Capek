@@ -62,3 +62,12 @@ D:\SOFTUNI\OOP\TeamWork\RPG_22.10.2014_23_52\Capek.RPGGame\obj\Debug\Capek.RPGGa
 D:\SOFTUNI\OOP\TeamWork\RPG_22.10.2014_23_52\Capek.RPGGame\obj\Debug\Capek.RPGGame.Engine.GameWindow.resources
 D:\SOFTUNI\OOP\TeamWork\RPG_22.10.2014_23_52\Capek.RPGGame\obj\Debug\Capek.RPGGame.Properties.Resources.resources
 D:\SOFTUNI\OOP\TeamWork\RPG_22.10.2014_23_52\Capek.RPGGame\obj\Debug\Capek.RPGGame.csproj.GenerateResource.Cache
+C:\Users\PO\Documents\GitHub\Capek_TEAM\Team-Capek\RPG\Capek.RPGGame\bin\Debug\Capek.RPGGame.exe.config
+C:\Users\PO\Documents\GitHub\Capek_TEAM\Team-Capek\RPG\Capek.RPGGame\obj\Debug\Capek.RPGGame.exe
+C:\Users\PO\Documents\GitHub\Capek_TEAM\Team-Capek\RPG\Capek.RPGGame\obj\Debug\Capek.RPGGame.pdb
+C:\Users\PO\Documents\GitHub\Capek_TEAM\Team-Capek\RPG\Capek.RPGGame\bin\Debug\Capek.RPGGame.exe
+C:\Users\PO\Documents\GitHub\Capek_TEAM\Team-Capek\RPG\Capek.RPGGame\bin\Debug\Capek.RPGGame.pdb
+C:\Users\PO\Documents\GitHub\Capek_TEAM\Team-Capek\RPG\Capek.RPGGame\obj\Debug\Capek.RPGGame.csprojResolveAssemblyReference.cache
+C:\Users\PO\Documents\GitHub\Capek_TEAM\Team-Capek\RPG\Capek.RPGGame\obj\Debug\Capek.RPGGame.Engine.GameWindow.resources
+C:\Users\PO\Documents\GitHub\Capek_TEAM\Team-Capek\RPG\Capek.RPGGame\obj\Debug\Capek.RPGGame.Properties.Resources.resources
+C:\Users\PO\Documents\GitHub\Capek_TEAM\Team-Capek\RPG\Capek.RPGGame\obj\Debug\Capek.RPGGame.csproj.GenerateResource.Cache
